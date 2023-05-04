@@ -1,0 +1,58 @@
+export const routineData = [
+  {
+    id: 1,
+    title: "Good Morning",
+    time: "7:00am",
+    frequent: "Every Day",
+    deviceNumber: 3,
+  },
+  {
+    id: 2,
+    title: "House Keeping",
+    time: "9:00am",
+    frequent: "Every Day",
+    deviceNumber: 3,
+  },
+  {
+    id: 3,
+    title: "Movie Night",
+    time: "10:00pm",
+    frequent: "Every Saturday",
+    deviceNumber: 3,
+  },
+  {
+    id: 4,
+    title: "Good Night's Sleep",
+    time: "11:00pm",
+    frequent: "Every Day",
+    deviceNumber: 3,
+  },
+  {
+    id: 5,
+    title: "Gaming Time",
+    time: "3:00am",
+    frequent: "Every Friday",
+    deviceNumber: 3,
+  },
+  {
+    id: 6,
+    title: "Kids in the house",
+    time: "7:30am",
+    frequent: "Every Sunday",
+    deviceNumber: 3,
+  },
+  {
+    id: 7,
+    title: "Concentrating",
+    time: "1:00pm",
+    frequent: "Every Day",
+    deviceNumber: 3,
+  },
+  {
+    id: 8,
+    title: "Friends",
+    time: "3:00pm",
+    frequent: "Every Thursday",
+    deviceNumber: 3,
+  },
+];
