@@ -10,7 +10,7 @@ const RoutineTag = ({ title, time, frequent, deviceNumber }) => {
       <View style={styles.headerInfo}>
         <Text style={styles.title}>{title}</Text>
         <View style={styles.toggle}>
-          <ToggleButton />
+          <ToggleButton initialValue={false} />
         </View>
       </View>
       <View style={styles.content}>

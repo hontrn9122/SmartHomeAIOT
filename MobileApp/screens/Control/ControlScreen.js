@@ -14,7 +14,11 @@ import { routineData } from "../../constants/routine";
 
 const ControlScreen = () => {
   return (
-    <ScrollView>
+    <ScrollView
+      style={{
+        width: "100%",
+      }}
+    >
       <SafeAreaView style={styles.container}>
         {routineData.map((item) => (
           <RoutineTag

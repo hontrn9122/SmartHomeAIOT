@@ -1,6 +1,8 @@
 import { View, Text, Image } from "react-native";
-import React from "react";
+import React, { useState } from "react";
+
 import { NavigationContainer } from "@react-navigation/native";
+
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 import { icons } from "../../assets";
@@ -25,6 +27,7 @@ const MainContainer = ({ setLogIn }) => {
       screenOptions={{
         tabBarStyle: { height: "10%", maxHeight: 130 },
         tabBarActiveTintColor: "#FF9900",
+        tabBarStyle: { height: 75 },
       }}
       barStyle={{ paddingBottom: 48 }}
     >
@@ -46,9 +49,9 @@ const MainContainer = ({ setLogIn }) => {
               source={focused ? icons.homeFocused : icons.homeIcon}
               style={{
                 height: "70%",
-                maxHeight: 50.67,
+                maxHeight: 40,
                 width: "70%",
-                maxWidth: 50.67,
+                maxWidth: 40,
               }}
             />
           ),
@@ -58,16 +61,26 @@ const MainContainer = ({ setLogIn }) => {
         name="Statics"
         component={StaticsScreen}
         options={{
-          tabBarLabel: "Statics",
+          headerTitle: () => (
+            <ControlHeader
+              title="Statics"
+              subtitle="                                                                         "
+            />
+          ),
+          headerStyle: {
+            height: 120,
+            backgroundColor: "#2A2A37",
+          },
+          tabBarLabel: "Control",
           tabBarLabelStyle: { fontWeight: "bold", fontSize: 12 },
           tabBarIcon: ({ focused }) => (
             <Image
               source={focused ? icons.staticsFocused : icons.staticsIcon}
               style={{
-                height: "70%",
-                maxHeight: 50.67,
-                width: "70%",
-                maxWidth: 50.67,
+                height: "80%",
+                maxHeight: 40,
+                width: "80%",
+                maxWidth: 40,
               }}
             />
           ),
@@ -94,9 +107,9 @@ const MainContainer = ({ setLogIn }) => {
               source={focused ? icons.controlFocused : icons.controlIcon}
               style={{
                 height: "80%",
-                maxHeight: 50.67,
+                maxHeight: 40,
                 width: "80%",
-                maxWidth: 50.67,
+                maxWidth: 40,
               }}
             />
           ),
@@ -114,9 +127,9 @@ const MainContainer = ({ setLogIn }) => {
               source={focused ? icons.settingFocused : icons.settingIcon}
               style={{
                 height: "70%",
-                maxHeight: 50.67,
+                maxHeight: 40,
                 width: "70%",
-                maxWidth: 50.67,
+                maxWidth: 40,
               }}
             />
           ),

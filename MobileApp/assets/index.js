@@ -21,6 +21,17 @@ const timeIcon = require("./icons/routine/time.png");
 const frequentIcon = require("./icons/routine/frequent.png");
 const gotoIcon = require("./icons/routine/goto.png");
 
+const focusedLight = require("./icons/roomDevice/focusedLight.png");
+const focusedThermostat = require("./icons/roomDevice/focusedThermostat.png");
+const focusedFridge = require("./icons/roomDevice/focusedFridge.png");
+const focusedFan = require("./icons/roomDevice/focusedFan.png");
+const focusedSpeaker = require("./icons/roomDevice/focusedSpeaker.png");
+const light = require("./icons/roomDevice/Light.png");
+const thermostat = require("./icons/roomDevice/thermostat.png");
+const fridge = require("./icons/roomDevice/fridge.png");
+const fan = require("./icons/roomDevice/fan.png");
+const speaker = require("./icons/roomDevice/speaker.png");
+
 export const icons = {
   homeIcon,
   homeFocused,
@@ -48,4 +59,17 @@ export const routine = {
   timeIcon,
   frequentIcon,
   gotoIcon,
+};
+
+export const roomDevice = {
+  focusedLight,
+  focusedThermostat,
+  focusedFridge,
+  focusedFan,
+  focusedSpeaker,
+  light,
+  thermostat,
+  fridge,
+  fan,
+  speaker,
 };

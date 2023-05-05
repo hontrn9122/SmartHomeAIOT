@@ -1,8 +1,8 @@
 import { View, Text, Switch, StyleSheet } from "react-native";
 import React, { useState } from "react";
 
-const ToggleButton = () => {
-  const [isEnabled, setIsEnabled] = useState(false);
+const ToggleButton = ({ initialValue }) => {
+  const [isEnabled, setIsEnabled] = useState(initialValue);
   const toggleSwitch = () => setIsEnabled((previousState) => !previousState);
   return (
     <View style={styles.container}>
