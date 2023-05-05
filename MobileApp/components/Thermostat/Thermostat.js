@@ -5,35 +5,6 @@ const Thermostat = () => {
   return (
     <View>
       <Text>Thermostat</Text>
-      <Text>Thermostat</Text>
-      <Text>Thermostat</Text>
-      <Text>Thermostat</Text>
-      <Text>Thermostat</Text>
-      <Text>Thermostat</Text>
-      <Text>Thermostat</Text>
-      <Text>Thermostat</Text>
-      <Text>Thermostat</Text>
-      <Text>Thermostat</Text>
-      <Text>Thermostat</Text>
-      <Text>Thermostat</Text>
-      <Text>Thermostat</Text>
-      <Text>Thermostat</Text>
-      <Text>Thermostat</Text>
-      <Text>Thermostat</Text>
-      <Text>Thermostat</Text>
-      <Text>Thermostat</Text>
-      <Text>Thermostat</Text>
-      <Text>Thermostat</Text>
-      <Text>Thermostat</Text>
-      <Text>Thermostat</Text>
-      <Text>Thermostat</Text>
-      <Text>Thermostat</Text>
-      <Text>Thermostat</Text>
-      <Text>Thermostat</Text>
-      <Text>Thermostat</Text>
-      <Text>Thermostat</Text>
-      <Text>Thermostat</Text>
-      <Text>Thermostat</Text>
     </View>
   );
 };

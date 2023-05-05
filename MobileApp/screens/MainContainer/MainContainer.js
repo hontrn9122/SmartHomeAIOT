@@ -9,7 +9,6 @@ import { icons } from "../../assets";
 import { HomeHeader, ControlHeader, Button } from "../../components";
 
 import {
-  LogInScreen,
   HomeScreen,
   RoomScreen,
   RoutineScreen,

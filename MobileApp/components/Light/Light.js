@@ -26,7 +26,7 @@ const Light = ({ route }) => {
       >
         <SafeAreaView style={styles.tagcontainer}>
           {item.device.light.map((light, element) => (
-            <LightTag element={element} light={light} />
+            <LightTag key={element} element={element} light={light} />
           ))}
         </SafeAreaView>
       </ScrollView>

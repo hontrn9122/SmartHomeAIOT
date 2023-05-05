@@ -44,6 +44,7 @@ const HomeScreen = () => {
         /> */}
           {roomData.map((item) => (
             <TouchableOpacity
+              key={item.id}
               style={styles.itemStyle}
               onPress={() => {
                 itemRoom(item);
@@ -51,7 +52,6 @@ const HomeScreen = () => {
               }}
             >
               <RoomTag
-                key={item.id}
                 title={item.title}
                 device={item.device}
                 imageSource={item.imageSource}
