@@ -2,9 +2,12 @@ import { View, Text, TextInput } from "react-native";
 import React, { useState, useEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { Audio } from "expo-av";
+// import axios from 'axios';
 // import * as Speech from "expo-speech";
 
 import { Button } from "../../components";
+
+const FLASK_BACKEND = "http://192.168.2.10:5000/upload";
 
 const SettingScreen = () => {
   const navigation = useNavigation();
