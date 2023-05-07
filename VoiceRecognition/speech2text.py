@@ -1,18 +1,22 @@
 from flask import Flask
-from speech import *
+from recordToCommand import *
+import json
+from audio_converter import *
 
 app = Flask(__name__)
 
 @app.route('/get', methods = ['GET'])
 def getAPI():
-    # The server will write the result to this path file, then read and return back to the API request. Change if needed.
-    path = 'C:\\Users\\Tai\\OneDrive\\Desktop\\Computer Vision\\SmartHome\\VoiceRecognition\\speech2text.txt'
-    
-    speech2text(path)
-    file = open(path, 'r')
-    taskList = file.read().split('\n')
-    result = taskList[1:-1]
+    recordFromApp = "sound.mp4"
+    input_filename = converter(recordFromApp)
+    input = rec2Command(input_filename)
+    result = "{"
+    for index in range(len(input)):
+        result += """{\"id\": """ + str(index + 1) + "," + """\"command\"""" + ": \"" + input[index] + """\"}"""
+        if index != len(input) - 1: result += ","
+    result += "}"
     return result
 
 if __name__ == "__main__":
     app.run()
+
