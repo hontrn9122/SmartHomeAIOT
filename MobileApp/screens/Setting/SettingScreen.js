@@ -44,13 +44,21 @@ const SettingScreen = () => {
       await recording.prepareToRecordAsync({
         android: {
           extension: ".wav",
-          outputFormat: Audio.RECORDING_OPTION_ANDROID_OUTPUT_FORMAT_WAVE,
-          audioEncoder: Audio.RECORDING_OPTION_ANDROID_AUDIO_ENCODER_DEFAULT,
+          outputFormat: Audio.RECORDING_OPTION_ANDROID_OUTPUT_FORMAT_MPEG_4,
+          audioEncoder: Audio.RECORDING_OPTION_ANDROID_AUDIO_ENCODER_AAC,
+          sampleRate: 44100,
+          numberOfChannels: 2,
+          bitRate: 128000,
         },
         ios: {
           extension: ".wav",
-          outputFormat: Audio.RECORDING_OPTION_IOS_OUTPUT_FORMAT_LINEARPCM,
-          audioQuality: Audio.RECORDING_OPTION_IOS_AUDIO_QUALITY_MAX,
+          audioQuality: Audio.RECORDING_OPTION_IOS_AUDIO_QUALITY_HIGH,
+          sampleRate: 44100,
+          numberOfChannels: 1,
+          bitRate: 128000,
+          linearPCMBitDepth: 16,
+          linearPCMIsBigEndian: false,
+          linearPCMIsFloat: false,
         },
       });
       await recording.startAsync();
@@ -69,8 +77,8 @@ const SettingScreen = () => {
       // Upload the recorded audio file to a server
       const formData = new FormData();
       formData.append("file", {
-        uri,
-        name: "recording.wav",
+        uri: uri,
+        name: "test.wav",
         type: "audio/wav",
       });
 
@@ -81,9 +89,9 @@ const SettingScreen = () => {
       const response = await fetch("http://192.168.2.10:5000/upload", {
         method: "POST",
         body: formData,
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
+        // headers: {
+        //   "Content-Type": "multipart/form-data",
+        // },
       });
       // Get the response text
       const responseText = await response.json();
