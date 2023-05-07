@@ -5,7 +5,7 @@ export const roomData = [
     id: 1,
     title: "Living Room",
     device: {
-      light: [false, true, true, false],
+      light: [false, true, true, false, true, true, true, true],
       fan: true,
       speaker: true,
       airconditioner: 25,

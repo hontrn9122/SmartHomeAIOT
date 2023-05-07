@@ -13,16 +13,25 @@ LogBox.ignoreLogs([
 const Stack = createNativeStackNavigator();
 
 export default function App() {
-  const [logIn, setLogIn] = useState(false);
-
   return (
-    <NavigationContainer stype={styles.container}>
-      {logIn ? (
-        <MainContainer setLogIn={setLogIn} />
-      ) : (
-        <LogInScreen setLogIn={setLogIn} />
-      )}
+    <NavigationContainer>
+      <Stack.Navigator
+        screenOptions={{
+          headerShown: false,
+        }}
+        initialRouteName={"Login"}
+      >
+        <Stack.Screen name="Login" component={LogInScreen} />
+        <Stack.Screen name="MainScreen" component={MainContainer} />
+      </Stack.Navigator>
     </NavigationContainer>
+    // <NavigationContainer stype={styles.container}>
+    //   {logIn ? (
+    //     <MainContainer setLogIn={setLogIn} />
+    //   ) : (
+    //     <LogInScreen setLogIn={setLogIn} />
+    //   )}
+    // </NavigationContainer>
   );
 }
 

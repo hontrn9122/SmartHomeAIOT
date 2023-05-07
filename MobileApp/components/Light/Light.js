@@ -34,6 +34,32 @@ const Light = ({ route }) => {
   );
 };
 
+const handdleTurnOnLight = () => {
+  fetch("http://192.168.2.10:3000/light_on", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({}),
+  })
+    .then((response) => response.text())
+    .then((text) => console.log(text))
+    .catch((error) => console.error("Error:", error));
+};
+
+const handdleTurnOffLight = () => {
+  fetch("http://192.168.2.10:3000/light_off", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({}),
+  })
+    .then((response) => response.text())
+    .then((text) => console.log(text))
+    .catch((error) => console.error("Error:", error));
+};
+
 const LightTag = ({ element, light }) => {
   return (
     <View style={styles.lighttag}>
@@ -43,7 +69,11 @@ const LightTag = ({ element, light }) => {
       <View style={styles.namecontain}>
         <Text style={styles.lightname}>Light {element + 1}</Text>
       </View>
-      <ToggleButton initialValue={light} />
+      <ToggleButton
+        trueState={handdleTurnOnLight}
+        falseState={handdleTurnOffLight}
+        initialValue={light}
+      />
     </View>
   );
 };
@@ -55,13 +85,15 @@ const styles = StyleSheet.create({
     width: "100%",
   },
   tagcontainer: {
+    width: "100%",
     flex: 1,
     borderWidth: 2,
+    height: "100%",
   },
   lighttag: {
     flexDirection: "row",
     width: "90%",
-    height: "15%",
+    height: 100,
     marginTop: 15,
     marginLeft: "5%",
     marginRight: "5%",

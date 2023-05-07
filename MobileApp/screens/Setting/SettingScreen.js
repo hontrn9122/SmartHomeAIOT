@@ -1,17 +1,32 @@
 import { View, Text, TextInput } from "react-native";
 import React, { useState, useEffect } from "react";
+import { useNavigation } from "@react-navigation/native";
 import { Audio } from "expo-av";
 // import * as Speech from "expo-speech";
 
 import { Button } from "../../components";
 
-const SettingScreen = ({ route }) => {
+const SettingScreen = () => {
+  const navigation = useNavigation();
+
   const [recording, setRecording] = useState();
+
   // const [text, setText] = useState("");
 
   // const speak = () => {
   //   Speech.speak(text);
   // };
+
+  // Test sound by this
+  const [sound, setSound] = useState();
+
+  const playRecording = async (uri) => {
+    console.log("Loading Sound");
+    const { sound } = await Audio.Sound.createAsync({ uri });
+    setSound(sound);
+    console.log("Playing Sound");
+    await sound.playAsync();
+  };
 
   const startRecording = async () => {
     try {
@@ -19,12 +34,22 @@ const SettingScreen = ({ route }) => {
       await Audio.setAudioModeAsync({
         allowsRecordingIOS: true,
         playsInSilentModeIOS: true,
+        playThroughEarpieceAndroid: false,
       });
 
       const recording = new Audio.Recording();
-      await recording.prepareToRecordAsync(
-        Audio.RECORDING_OPTIONS_PRESET_HIGH_QUALITY
-      );
+      await recording.prepareToRecordAsync({
+        android: {
+          extension: ".wav",
+          outputFormat: Audio.RECORDING_OPTION_ANDROID_OUTPUT_FORMAT_WAVE,
+          audioEncoder: Audio.RECORDING_OPTION_ANDROID_AUDIO_ENCODER_DEFAULT,
+        },
+        ios: {
+          extension: ".wav",
+          outputFormat: Audio.RECORDING_OPTION_IOS_OUTPUT_FORMAT_LINEARPCM,
+          audioQuality: Audio.RECORDING_OPTION_IOS_AUDIO_QUALITY_MAX,
+        },
+      });
       await recording.startAsync();
       setRecording(recording);
     } catch (err) {
@@ -42,17 +67,24 @@ const SettingScreen = ({ route }) => {
       const formData = new FormData();
       formData.append("file", {
         uri,
-        name: "recording.m4a",
-        type: "audio/m4a",
+        name: "recording.wav",
+        type: "audio/wav",
       });
 
-      const response = await fetch("<URL>", {
+      console.log("Uploading...");
+      console.log(formData);
+      playRecording(uri);
+
+      const response = await fetch("http://192.168.2.10:5000/upload", {
         method: "POST",
         body: formData,
         headers: {
           "Content-Type": "multipart/form-data",
         },
       });
+      // Get the response text
+      const responseText = await response.json();
+      console.log("testing: ", responseText);
 
       // Handle server response
     } catch (err) {
@@ -60,9 +92,8 @@ const SettingScreen = ({ route }) => {
     }
   };
 
-  const { setLogIn } = route.params;
   const onLogOutPressed = () => {
-    setLogIn(false);
+    navigation.navigate("Login");
   };
 
   return (

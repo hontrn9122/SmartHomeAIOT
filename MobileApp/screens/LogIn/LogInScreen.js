@@ -8,18 +8,22 @@ import {
   ScrollView,
 } from "react-native";
 
+import { useNavigation } from "@react-navigation/native";
+
 import Logo from "../../assets/images/logo.png";
 import LoginBackground from "../../assets/images/loginbackground.png";
 import LogoName from "../../assets/images/logoname.png";
 
 import { UserInput, Button } from "../../components";
 
-const LogInScreen = ({ setLogIn }) => {
+const LogInScreen = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
+  const navigation = useNavigation();
+
   const onLogInPressed = () => {
-    setLogIn(true);
+    navigation.navigate("MainScreen");
   };
 
   const onCreateResident = () => {
