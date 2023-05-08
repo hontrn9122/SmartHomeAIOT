@@ -1,4 +1,11 @@
-import { View, Text, Dimensions, SafeAreaView, StyleSheet } from "react-native";
+import {
+  View,
+  Text,
+  Dimensions,
+  SafeAreaView,
+  StyleSheet,
+  Button,
+} from "react-native";
 
 import {
   LineChart,
@@ -9,55 +16,60 @@ import {
   StackedBarChart,
 } from "react-native-chart-kit";
 
-import PureChart from "react-native-pure-chart";
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-// let sampleData = [
-//   {
-//     seriesName: "series1",
-//     data: [
-//       { x: "2018-02-01", y: 30 },
-//       { x: "2018-02-02", y: 200 },
-//       { x: "2018-02-03", y: 170 },
-//       { x: "2018-02-04", y: 250 },
-//       { x: "2018-02-05", y: 10 },
-//     ],
-//     color: "#297AB1",
-//   },
-//   {
-//     seriesName: "series2",
-//     data: [
-//       { x: "2018-02-01", y: 20 },
-//       { x: "2018-02-02", y: 100 },
-//       { x: "2018-02-03", y: 140 },
-//       { x: "2018-02-04", y: 550 },
-//       { x: "2018-02-05", y: 40 },
-//     ],
-//     color: "yellow",
-//   },
-// ];
+const getData = async () => {
+  try {
+    // Send the GET request to the /get_heat_data endpoint
+    const response = await fetch("http://192.168.2.10:3000/get_heat_data");
+
+    // Check if the request was successful
+    if (response.ok) {
+      // Parse the JSON response
+      const data = await response.json();
+
+      // Handle the data here
+      console.log(data);
+      return data;
+    } else {
+      console.error(`An error occurred: ${response.statusText}`);
+    }
+  } catch (err) {
+    console.error(`An error occurred: ${err.message}`);
+  }
+};
 
 const StaticsScreen = () => {
+  const [dataValue, setDataValue] = useState([]);
+  const [heatLabels, setHeatLabels] = useState([]);
+  useEffect(() => {
+    getData().then((heatData) => {
+      // Extract the data values from the array
+      const dataValue = heatData.map((item) => parseFloat(item.value));
+      // Extract the labels from the array
+      const heatLabels = heatData.map((item) => item.created_at);
+
+      setDataValue(dataValue);
+      setHeatLabels(heatLabels);
+      console.log(dataValue);
+      console.log(heatLabels);
+    });
+  }, []);
+
+  // // Extract the data values from the array
+  // const dataValue = heatData.map((item) => parseFloat(item.value));
+  // // Extract the labels from the array
+  // const heatLabels = heatData.map((item) => item.created_at);
   return (
     <SafeAreaView>
-      {/* <View style={styles.chart}>
-        <PureChart data={sampleData} height={350} type="line" />
-      </View> */}
-      {/* <View>
-        <Text>Bezier Line Chart</Text>
+      <Button title="click" onPress={getData} />
+      <View>
         <LineChart
           data={{
-            labels: ["January", "February", "March", "April", "May", "June"],
+            labels: heatLabels,
             datasets: [
               {
-                data: [
-                  Math.random() * 100,
-                  Math.random() * 100,
-                  Math.random() * 100,
-                  Math.random() * 100,
-                  Math.random() * 100,
-                  Math.random() * 100,
-                ],
+                data: dataValue,
               },
             ],
           }}
@@ -88,7 +100,7 @@ const StaticsScreen = () => {
             borderRadius: 16,
           }}
         />
-      </View> */}
+      </View>
       <View style={styles.content}></View>
     </SafeAreaView>
   );

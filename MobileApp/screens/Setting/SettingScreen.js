@@ -43,8 +43,8 @@ const SettingScreen = () => {
       const recording = new Audio.Recording();
       await recording.prepareToRecordAsync({
         android: {
-          extension: ".wav",
-          outputFormat: Audio.RECORDING_OPTION_ANDROID_OUTPUT_FORMAT_MPEG_4,
+          extension: ".mp4",
+          outputFormat: Audio.RECORDING_OPTION_ANDROID_OUTPUT_FORMAT_DEFAULT,
           audioEncoder: Audio.RECORDING_OPTION_ANDROID_AUDIO_ENCODER_AAC,
           sampleRate: 44100,
           numberOfChannels: 2,
@@ -78,12 +78,11 @@ const SettingScreen = () => {
       const formData = new FormData();
       formData.append("file", {
         uri: uri,
-        name: "test.wav",
+        name: "recording.mp4",
         type: "audio/wav",
       });
 
       console.log("Uploading...");
-      console.log(formData);
       playRecording(uri);
 
       const response = await fetch("http://192.168.2.10:5000/upload", {

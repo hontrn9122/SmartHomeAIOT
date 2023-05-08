@@ -59,6 +59,7 @@ const styles = StyleSheet.create({
   headerInfo: {
     borderColor: "#000",
     borderBottomWidth: 0.5,
+    height: "40%",
     width: "100%",
     padding: 5,
     flexDirection: "row",

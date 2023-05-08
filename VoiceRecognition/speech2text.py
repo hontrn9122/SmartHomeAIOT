@@ -1,7 +1,8 @@
-from flask import Flask
+from flask import Flask, request
 from recordToCommand import *
 import json
 from audio_converter import *
+from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 
@@ -17,6 +18,27 @@ def getAPI():
     result += "}"
     return result
 
+@app.route('/upload', methods=['POST'])
+def upload_file():
+    print("go to the upload ..........")
+    print(request.files)
+    if 'file' not in request.files:
+        return 'No file part'
+    file = request.files['file']
+    
+    if file.filename == '':
+        return 'No selected file'
+    
+    filename = secure_filename(file.filename)
+    filepath = os.path.join('/tmp', filename)
+    file.save(filepath)
+    result = converter(filepath)
+    return rec2Command(result)
+
+
 if __name__ == "__main__":
-    app.run()
+    app.run(
+        debug=True,
+        host="192.168.2.10"
+    )
 
