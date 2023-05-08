@@ -385,3 +385,13 @@ INFO:root:1683484306.5702026:: speechrecognition.py: {"result":[]}
  
 
 INFO:werkzeug:192.168.2.4 - - [08/May/2023 01:31:46] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683555640.3963675:: speechrecognition class instantiated 
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.2.10:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:1683555640.8070357:: speechrecognition class instantiated 
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 621-765-780
