@@ -4,13 +4,13 @@ import React from "react";
 import ToggleButton from "../ToggleButton/ToggleButton";
 import { routine } from "../../assets";
 
-const RoutineTag = ({ title, time, frequent, deviceNumber }) => {
+const RoutineTag = ({ title, time, frequent, deviceNumber, state }) => {
   return (
     <View style={styles.container}>
       <View style={styles.headerInfo}>
         <Text style={styles.title}>{title}</Text>
         <View style={styles.toggle}>
-          <ToggleButton initialValue={false} />
+          <ToggleButton initialValue={state} />
         </View>
       </View>
       <View style={styles.content}>
@@ -59,6 +59,7 @@ const styles = StyleSheet.create({
   headerInfo: {
     borderColor: "#000",
     borderBottomWidth: 0.5,
+    height: "40%",
     width: "100%",
     padding: 5,
     flexDirection: "row",

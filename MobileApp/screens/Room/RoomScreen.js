@@ -9,13 +9,15 @@ import {
 import React from "react";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 
+import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
+
 import Light from "../../components/Light/Light";
 import Thermostat from "../../components/Thermostat/Thermostat";
 import Fridge from "../../components/Fridge/Fridge";
 import Fans from "../../components/Fans/Fans";
 import Speaker from "../../components/Speaker/Speaker";
 
-const Tab = createMaterialTopTabNavigator();
+const Tab = createMaterialBottomTabNavigator();
 
 import { roomDevice } from "../../assets";
 const backIcon = require("../../assets/images/backIcon.png");

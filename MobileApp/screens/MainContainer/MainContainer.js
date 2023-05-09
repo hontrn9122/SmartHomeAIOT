@@ -26,7 +26,7 @@ const MainContainer = ({ setLogIn }) => {
       screenOptions={{
         tabBarStyle: { height: "10%", maxHeight: 130 },
         tabBarActiveTintColor: "#FF9900",
-        tabBarStyle: { height: 75 },
+        tabBarStyle: { height: "12%" },
       }}
       barStyle={{ paddingBottom: 48 }}
     >
@@ -40,7 +40,7 @@ const MainContainer = ({ setLogIn }) => {
               subtitle="VNU - Ho Chi Minh University of Technology"
             />
           ),
-          headerStyle: { height: 120, backgroundColor: "#2A2A37" },
+          headerStyle: { height: 150, backgroundColor: "#2A2A37" },
           tabBarLabel: "Home",
           tabBarLabelStyle: { fontWeight: "bold", fontSize: 12 },
           tabBarIcon: ({ focused }) => (
@@ -62,15 +62,15 @@ const MainContainer = ({ setLogIn }) => {
         options={{
           headerTitle: () => (
             <ControlHeader
-              title="Statics"
+              title="Statistics"
               subtitle="                                                                         "
             />
           ),
           headerStyle: {
-            height: 120,
+            height: 150,
             backgroundColor: "#2A2A37",
           },
-          tabBarLabel: "Control",
+          tabBarLabel: "Statistics",
           tabBarLabelStyle: { fontWeight: "bold", fontSize: 12 },
           tabBarIcon: ({ focused }) => (
             <Image
@@ -96,7 +96,7 @@ const MainContainer = ({ setLogIn }) => {
             />
           ),
           headerStyle: {
-            height: 120,
+            height: 150,
             backgroundColor: "#2A2A37",
           },
           tabBarLabel: "Control",
@@ -126,7 +126,7 @@ const MainContainer = ({ setLogIn }) => {
               source={focused ? icons.settingFocused : icons.settingIcon}
               style={{
                 height: "70%",
-                maxHeight: 40,
+                maxHeight: 43,
                 width: "70%",
                 maxWidth: 40,
               }}

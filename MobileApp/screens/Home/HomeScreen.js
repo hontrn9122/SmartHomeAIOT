@@ -78,7 +78,7 @@ const HomeScreen = () => {
         </View>
       </Modal>
       <Modal isVisible={isRoomOpen}>
-        <View style={{ height: "100%" }}>
+        <View style={{ height: "80%", borderWidth: 2 }}>
           <RoomScreen item={itemKey} goBack={handleRoom} />
         </View>
       </Modal>
@@ -112,7 +112,7 @@ const styles = StyleSheet.create({
     height: 200,
 
     padding: 10,
-    margin: 10,
+    margin: "2%",
   },
   floatingButton: {
     width: 60,
