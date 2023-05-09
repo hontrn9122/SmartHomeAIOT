@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import LogInScreen from "./screens/LogIn/LogInScreen";
 import MainContainer from "./screens/MainContainer/MainContainer";
+import { FaceRegisterScreen } from "./screens";
 
 LogBox.ignoreLogs([
   "Non-serializable values were found in the navigation state",
@@ -23,6 +24,7 @@ export default function App() {
       >
         <Stack.Screen name="Login" component={LogInScreen} />
         <Stack.Screen name="MainScreen" component={MainContainer} />
+        <Stack.Screen name="FaceRegisterScreen" component={FaceRegisterScreen} />
       </Stack.Navigator>
     </NavigationContainer>
     // <NavigationContainer stype={styles.container}>

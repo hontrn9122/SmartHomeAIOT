@@ -108,6 +108,10 @@ const SettingScreen = () => {
     navigation.navigate("Login");
   };
 
+  const onFaceRegistrationPressed = () => {
+    navigation.navigate("FaceRegisterScreen")
+  };
+
   return (
     <View>
       <Text>SettingScreen</Text>
@@ -127,6 +131,10 @@ const SettingScreen = () => {
           return <Text key={element}>{item}</Text>;
         })}
       </View>
+      <Button
+        onPress={onFaceRegistrationPressed}
+        text={"Register new FaceID"}
+      />
     </View>
   );
 };
