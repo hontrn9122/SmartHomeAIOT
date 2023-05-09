@@ -7,8 +7,9 @@ import {
   SafeAreaView,
 } from "react-native";
 import React from "react";
-
 import ToggleButton from "../ToggleButton/ToggleButton";
+
+const SERVER_IP = "http://192.168.2.10";
 
 const lightIcon = require("../../assets/icons/roomDevice/focusedLight.png");
 
@@ -33,7 +34,7 @@ const Light = ({ route }) => {
 };
 
 const handdleTurnOnLight = () => {
-  fetch("http://192.168.2.10:3000/light_on", {
+  fetch(`${SERVER_IP}:3000/light_on`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -46,7 +47,7 @@ const handdleTurnOnLight = () => {
 };
 
 const handdleTurnOffLight = () => {
-  fetch("http://192.168.2.10:3000/light_off", {
+  fetch(`${SERVER_IP}:3000/light_off`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

@@ -2,6 +2,8 @@ const express = require("express");
 const mqtt = require("mqtt");
 const app = express();
 const port = 3000;
+const bodyParser = require("body-parser");
+app.use(bodyParser.json());
 
 // Adafruit IO credentials
 const username = "thanhthien412";
@@ -53,6 +55,22 @@ function light_off(res) {
       res.send(`Published state 0 to topic "room1-slash-light"`);
     }
   });
+}
+
+function fan_control(req, res) {
+  // Publish message to the specified topic
+  client.publish(
+    username + "/feeds/room1-slash-fan",
+    req.body.data,
+    {},
+    (err) => {
+      if (err) {
+        res.status(500).send(`Failed to publish message: ${err.message}`);
+      } else {
+        res.send(`Published state ${req.body.data} to topic "room1-slash-fan"`);
+      }
+    }
+  );
 }
 
 async function get_heat_data(res) {
@@ -121,6 +139,12 @@ app.post("/light_on", (req, res) => {
 app.post("/light_off", (req, res) => {
   light_off(res);
 });
+
+// ----------------------------------- Fan Control
+app.post("/fan_control", (req, res) => {
+  fan_control(req, res);
+});
+
 // ----------------------------------- Heat and Light sensor
 app.get("/get_heat_data", (req, res) => {
   get_heat_data(res);

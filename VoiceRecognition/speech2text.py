@@ -6,6 +6,8 @@ from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 
+SERVER_IP = "192.168.2.10"
+
 @app.route('/get', methods = ['GET'])
 def getAPI():
     recordFromApp = "sound.mp4"

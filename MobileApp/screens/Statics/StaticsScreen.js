@@ -12,10 +12,12 @@ import {
 import React, { useState, useEffect } from "react";
 import Button from "../../components/Button/Button";
 
+const SERVER_IP = "http://192.168.2.10";
+
 const getDataNear = async () => {
   try {
     // Send the GET request to the /get_heat_data endpoint
-    const response = await fetch("http://192.168.2.10:3000/get_heat_data");
+    const response = await fetch(`${SERVER_IP}:3000/get_heat_data`);
 
     // Check if the request was successful
     if (response.ok) {
@@ -36,7 +38,7 @@ const getDataNear = async () => {
 const getLightData = async () => {
   try {
     // Send the GET request to the /get_light_data endpoint
-    const response = await fetch("http://192.168.2.10:3000/get_light_data");
+    const response = await fetch(`${SERVER_IP}:3000/get_light_data`);
 
     // Check if the request was successful
     if (response.ok) {

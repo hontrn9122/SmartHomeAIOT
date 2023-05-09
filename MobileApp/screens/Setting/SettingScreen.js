@@ -7,14 +7,13 @@ import { Audio } from "expo-av";
 
 import { Button } from "../../components";
 
-const FLASK_BACKEND = "http://192.168.2.10:5000/upload";
+const SERVER_IP = "http://192.168.2.10";
 
 const SettingScreen = () => {
   const navigation = useNavigation();
 
   const [recording, setRecording] = useState();
-
-  // const [text, setText] = useState("");
+  const [command, setCommand] = useState(["none"]);
 
   // const speak = () => {
   //   Speech.speak(text);
@@ -78,22 +77,25 @@ const SettingScreen = () => {
       const formData = new FormData();
       formData.append("file", {
         uri: uri,
-        name: "recording.mp4",
-        type: "audio/wav",
+        name: "hehe.mp4",
+        type: "application/octet-stream",
       });
 
       console.log("Uploading...");
       playRecording(uri);
 
-      const response = await fetch("http://192.168.2.10:5000/upload", {
+      const response = await fetch(`${SERVER_IP}:5000/upload`, {
         method: "POST",
         body: formData,
-        // headers: {
-        //   "Content-Type": "multipart/form-data",
-        // },
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
       });
       // Get the response text
       const responseText = await response.json();
+
+      // Store the command
+      setCommand(responseText);
       console.log("testing: ", responseText);
 
       // Handle server response
@@ -120,6 +122,11 @@ const SettingScreen = () => {
         onPress={recording ? stopRecording : startRecording}
         text={recording ? "Stop Recording" : "Start Recording"}
       />
+      <View>
+        {command.map((item, element) => {
+          return <Text key={element}>{item}</Text>;
+        })}
+      </View>
     </View>
   );
 };

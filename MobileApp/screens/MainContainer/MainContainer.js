@@ -62,7 +62,7 @@ const MainContainer = ({ setLogIn }) => {
         options={{
           headerTitle: () => (
             <ControlHeader
-              title="Statics"
+              title="Statistics"
               subtitle="                                                                         "
             />
           ),
@@ -70,7 +70,7 @@ const MainContainer = ({ setLogIn }) => {
             height: 150,
             backgroundColor: "#2A2A37",
           },
-          tabBarLabel: "Statics",
+          tabBarLabel: "Statistics",
           tabBarLabelStyle: { fontWeight: "bold", fontSize: 12 },
           tabBarIcon: ({ focused }) => (
             <Image
