@@ -4,6 +4,7 @@ import ControlScreen from "./Control/ControlScreen";
 import RoutineScreen from "./Routine/RoutineScreen";
 import StaticsScreen from "./Statics/StaticsScreen";
 import SettingScreen from "./Setting/SettingScreen";
+import FaceRegisterScreen from "./Setting/FaceRegisterScreen";
 
 export {
   HomeScreen,
@@ -12,4 +13,5 @@ export {
   RoutineScreen,
   StaticsScreen,
   SettingScreen,
+  FaceRegisterScreen,
 };

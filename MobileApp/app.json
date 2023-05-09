@@ -31,6 +31,14 @@
       "eas": {
         "projectId": "cdf077b7-fc76-4a98-b131-18e43e70c282"
       }
-    }
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera."
+        }
+      ]
+    ]
   }
 }
