@@ -1,0 +1,601 @@
+INFO:root:1683478259.2882519:: speechrecognition class instantiated 
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.2.10:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:1683478259.9450042:: speechrecognition class instantiated 
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 621-765-780
+INFO:werkzeug:192.168.2.11 - - [07/May/2023 23:51:08] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Lenovo\\Desktop\\HCMUT222\\myproject\\SmartHomeAIOT\\VoiceRecognition\\speech2Text.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:1683478351.9608114:: speechrecognition class instantiated 
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 621-765-780
+INFO:werkzeug: * Detected change in 'C:\\Users\\Lenovo\\Desktop\\HCMUT222\\myproject\\SmartHomeAIOT\\VoiceRecognition\\speech2Text.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:1683478357.5943294:: speechrecognition class instantiated 
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 621-765-780
+INFO:werkzeug: * Detected change in 'C:\\Users\\Lenovo\\Desktop\\HCMUT222\\myproject\\SmartHomeAIOT\\VoiceRecognition\\speech2Text.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:1683478412.4187891:: speechrecognition class instantiated 
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 621-765-780
+INFO:werkzeug:192.168.2.11 - - [07/May/2023 23:53:38] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683478448.2130728:: speechrecognition class instantiated 
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.2.10:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:1683478448.633488:: speechrecognition class instantiated 
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 621-765-780
+INFO:werkzeug:192.168.2.11 - - [07/May/2023 23:54:27] "POST /upload HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Lenovo\\Desktop\\HCMUT222\\myproject\\SmartHomeAIOT\\VoiceRecognition\\speech2text.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:1683478542.5900955:: speechrecognition class instantiated 
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 621-765-780
+INFO:werkzeug:192.168.2.10 - - [07/May/2023 23:55:49] "[35m[1mGET /get HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.2.10 - - [07/May/2023 23:55:49] "[36mGET /get?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.2.10 - - [07/May/2023 23:55:49] "[36mGET /get?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.2.10 - - [07/May/2023 23:55:49] "[36mGET /get?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.2.10 - - [07/May/2023 23:55:49] "[36mGET /get?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.2.4 - - [08/May/2023 00:23:06] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683480434.6227765:: speechrecognition class instantiated 
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.2.10:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:1683480435.299811:: speechrecognition class instantiated 
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 621-765-780
+INFO:werkzeug:192.168.2.11 - - [08/May/2023 00:27:21] "POST /upload HTTP/1.1" 200 -
+INFO:werkzeug:192.168.2.10 - - [08/May/2023 00:28:13] "[35m[1mGET /get HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.2.10 - - [08/May/2023 00:28:14] "[36mGET /get?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.2.10 - - [08/May/2023 00:28:14] "[36mGET /get?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.2.10 - - [08/May/2023 00:28:14] "[36mGET /get?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.2.10 - - [08/May/2023 00:28:14] "[36mGET /get?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:root:1683480717.902346:: speechrecognition class instantiated 
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.2.10:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:1683480718.3512318:: speechrecognition class instantiated 
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 621-765-780
+INFO:werkzeug:192.168.2.10 - - [08/May/2023 00:32:33] "[35m[1mGET /get HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.2.10 - - [08/May/2023 00:32:33] "[36mGET /get?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.2.10 - - [08/May/2023 00:32:33] "[36mGET /get?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.2.10 - - [08/May/2023 00:32:33] "[36mGET /get?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.2.10 - - [08/May/2023 00:32:33] "[36mGET /get?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.2.10 - - [08/May/2023 00:32:35] "[35m[1mGET /get HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.2.10 - - [08/May/2023 00:32:35] "[36mGET /get?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.2.10 - - [08/May/2023 00:32:35] "[36mGET /get?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.2.10 - - [08/May/2023 00:32:35] "[36mGET /get?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.2.10 - - [08/May/2023 00:32:35] "[36mGET /get?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:root:1683481256.6491606:: speechrecognition class instantiated 
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.2.10:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:1683481257.2847674:: speechrecognition class instantiated 
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 621-765-780
+INFO:werkzeug:192.168.2.11 - - [08/May/2023 00:41:35] "POST /upload HTTP/1.1" 200 -
+INFO:werkzeug:192.168.2.4 - - [08/May/2023 00:41:53] "POST /upload HTTP/1.1" 200 -
+INFO:werkzeug:192.168.2.10 - - [08/May/2023 00:42:18] "[35m[1mGET /get HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.2.10 - - [08/May/2023 00:42:19] "[36mGET /get?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.2.10 - - [08/May/2023 00:42:19] "[36mGET /get?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.2.10 - - [08/May/2023 00:42:19] "[36mGET /get?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.2.10 - - [08/May/2023 00:42:19] "[36mGET /get?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Lenovo\\Desktop\\HCMUT222\\myproject\\SmartHomeAIOT\\VoiceRecognition\\audio_converter.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:1683481393.880661:: speechrecognition class instantiated 
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 621-765-780
+INFO:werkzeug:192.168.2.10 - - [08/May/2023 00:43:19] "[35m[1mGET /get HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.2.10 - - [08/May/2023 00:43:20] "[36mGET /get?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.2.10 - - [08/May/2023 00:43:20] "[36mGET /get?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.2.10 - - [08/May/2023 00:43:20] "[36mGET /get?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.2.10 - - [08/May/2023 00:43:20] "[36mGET /get?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Lenovo\\Desktop\\HCMUT222\\myproject\\SmartHomeAIOT\\VoiceRecognition\\speech2text.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:1683481442.5496569:: speechrecognition class instantiated 
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 621-765-780
+INFO:root:1683481443.5531597:: Calling Google API... 
+
+INFO:root:1683481443.8545241:: speechrecognition.py:  received API response 
+
+INFO:root:1683481444.9126146:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn on the light turn off the fish tank you","confidence":0.9248535},{"transcript":"banana turn on the light turn off the tank you"},{"transcript":"banana turn on the light turn off the fish tank U"},{"transcript":"banana turn on the light turn off the Frank and Q"},{"transcript":"banana turn on the lights turn off the fish tank you"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.10 - - [08/May/2023 00:44:04] "GET /get HTTP/1.1" 200 -
+INFO:werkzeug:192.168.2.10 - - [08/May/2023 00:44:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.2.4 - - [08/May/2023 00:44:24] "POST /upload HTTP/1.1" 200 -
+INFO:werkzeug:192.168.2.4 - - [08/May/2023 00:44:41] "POST /upload HTTP/1.1" 200 -
+INFO:werkzeug:192.168.2.11 - - [08/May/2023 00:46:11] "POST /upload HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Lenovo\\Desktop\\HCMUT222\\myproject\\SmartHomeAIOT\\VoiceRecognition\\speech2Text.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:1683481601.1409981:: speechrecognition class instantiated 
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 621-765-780
+INFO:werkzeug:192.168.2.11 - - [08/May/2023 00:46:45] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.2.4 - - [08/May/2023 00:46:52] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.2.11 - - [08/May/2023 00:48:22] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.2.4 - - [08/May/2023 00:48:43] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.2.11 - - [08/May/2023 00:49:28] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Lenovo\\Desktop\\HCMUT222\\myproject\\SmartHomeAIOT\\VoiceRecognition\\audio_converter.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:1683481797.33637:: speechrecognition class instantiated 
+
+INFO:root:1683481821.2950425:: speechrecognition class instantiated 
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.2.10:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:1683481821.733638:: speechrecognition class instantiated 
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 621-765-780
+INFO:werkzeug:192.168.2.11 - - [08/May/2023 00:50:23] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.2.11 - - [08/May/2023 00:50:27] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.2.11 - - [08/May/2023 00:50:45] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Lenovo\\Desktop\\HCMUT222\\myproject\\SmartHomeAIOT\\VoiceRecognition\\audio_converter.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:1683481865.4224944:: speechrecognition class instantiated 
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 621-765-780
+INFO:werkzeug: * Detected change in 'C:\\Users\\Lenovo\\Desktop\\HCMUT222\\myproject\\SmartHomeAIOT\\VoiceRecognition\\audio_converter.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:1683481879.986364:: speechrecognition class instantiated 
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 621-765-780
+INFO:werkzeug:192.168.2.11 - - [08/May/2023 00:51:25] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.2.4 - - [08/May/2023 00:51:31] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:root:1683481914.9107347:: Calling Google API... 
+
+INFO:root:1683481915.1809216:: speechrecognition.py:  received API response 
+
+INFO:root:1683481916.3126884:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn on the light turn off the fish tank you","confidence":0.92485368},{"transcript":"banana turn on the light turn off the tank you"},{"transcript":"banana turn on the light turn off the fish tank U"},{"transcript":"banana turn on the light turn off the Frank and Q"},{"transcript":"banana turn on the lights turn off the fish tank you"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.10 - - [08/May/2023 00:51:56] "GET /get HTTP/1.1" 200 -
+INFO:werkzeug:192.168.2.11 - - [08/May/2023 00:52:11] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.2.11 - - [08/May/2023 00:52:36] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Lenovo\\Desktop\\HCMUT222\\myproject\\SmartHomeAIOT\\VoiceRecognition\\speech2Text.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:1683482013.5341291:: speechrecognition class instantiated 
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 621-765-780
+INFO:werkzeug:192.168.2.11 - - [08/May/2023 00:53:37] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Lenovo\\Desktop\\HCMUT222\\myproject\\SmartHomeAIOT\\VoiceRecognition\\speech2Text.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:1683482037.3904746:: speechrecognition class instantiated 
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 621-765-780
+INFO:werkzeug:192.168.2.11 - - [08/May/2023 00:54:01] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Lenovo\\Desktop\\HCMUT222\\myproject\\SmartHomeAIOT\\VoiceRecognition\\speech2Text.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:1683482053.0445242:: speechrecognition class instantiated 
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 621-765-780
+INFO:root:1683482204.4649277:: Calling Google API... 
+
+INFO:root:1683482204.7829483:: speechrecognition.py:  received API response 
+
+INFO:root:1683482205.0188012:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"allo Allo","confidence":0.90509939},{"transcript":"alo alo"},{"transcript":"aloe aloe"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.4 - - [08/May/2023 00:56:45] "POST /upload HTTP/1.1" 200 -
+INFO:werkzeug:192.168.2.11 - - [08/May/2023 00:57:01] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:root:1683482320.8848124:: Calling Google API... 
+
+INFO:root:1683482321.1231403:: speechrecognition.py:  received API response 
+
+INFO:root:1683482321.2985482:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"hello hello","confidence":0.50226533},{"transcript":"allo Allo"},{"transcript":"LOL 0"},{"transcript":"alo alo"},{"transcript":"LOL oh"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.4 - - [08/May/2023 00:58:41] "POST /upload HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Lenovo\\Desktop\\HCMUT222\\myproject\\SmartHomeAIOT\\VoiceRecognition\\speech2text.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:1683482376.2330425:: speechrecognition class instantiated 
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 621-765-780
+INFO:root:1683482388.2275832:: Calling Google API... 
+
+INFO:root:1683482388.4274418:: speechrecognition.py:  received API response 
+
+INFO:root:1683482388.7424533:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"hello hello","confidence":0.92125714},{"transcript":"say hello hello"},{"transcript":"Hello-Hello"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [08/May/2023 00:59:48] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683482516.0868394:: Calling Google API... 
+
+INFO:root:1683482516.221143:: speechrecognition.py:  received API response 
+
+INFO:root:1683482516.277506:: speechrecognition.py: {"result":[]}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [08/May/2023 01:01:56] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Lenovo\\Desktop\\HCMUT222\\myproject\\SmartHomeAIOT\\VoiceRecognition\\audio_converter.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:1683482589.005861:: speechrecognition class instantiated 
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 621-765-780
+INFO:root:1683482594.5092638:: Calling Google API... 
+
+INFO:root:1683482594.6827865:: speechrecognition.py:  received API response 
+
+INFO:root:1683482595.1996787:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"McCartney","confidence":0.30539805},{"transcript":"because"},{"transcript":"they cost"},{"transcript":"play Kanye"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [08/May/2023 01:03:15] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683482607.0911036:: Calling Google API... 
+
+INFO:root:1683482607.2654924:: speechrecognition.py:  received API response 
+
+INFO:root:1683482607.3088756:: speechrecognition.py: {"result":[]}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [08/May/2023 01:03:27] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:root:1683482654.8779943:: Calling Google API... 
+
+INFO:root:1683482655.109869:: speechrecognition.py:  received API response 
+
+INFO:root:1683482655.221773:: speechrecognition.py: {"result":[]}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [08/May/2023 01:04:15] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:root:1683482673.7527537:: Calling Google API... 
+
+INFO:root:1683482673.9749315:: speechrecognition.py:  received API response 
+
+INFO:root:1683482674.3071597:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"synonymous","confidence":0.89054877},{"transcript":"banana"},{"transcript":"bananas"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [08/May/2023 01:04:34] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683482711.8625088:: Calling Google API... 
+
+INFO:root:1683482712.0402122:: speechrecognition.py:  received API response 
+
+INFO:root:1683482712.1066425:: speechrecognition.py: {"result":[]}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [08/May/2023 01:05:12] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:root:1683482857.3817558:: Calling Google API... 
+
+INFO:root:1683482857.6458766:: speechrecognition.py:  received API response 
+
+INFO:root:1683482857.8147426:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"hello","confidence":0.98762906}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.4 - - [08/May/2023 01:07:37] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683482865.040657:: Calling Google API... 
+
+INFO:root:1683482865.2580183:: speechrecognition.py:  received API response 
+
+INFO:root:1683482865.516422:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"hello hello","confidence":0.33362812},{"transcript":"ololo"},{"transcript":"LOL"},{"transcript":"hello"},{"transcript":"allo Allo"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [08/May/2023 01:07:45] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683483025.9419315:: Calling Google API... 
+
+INFO:root:1683483026.2560115:: speechrecognition.py:  received API response 
+
+INFO:root:1683483027.0211492:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn on the light turn off the fame","confidence":0.79831153},{"transcript":"banana turn on the light turn off the same"},{"transcript":"banana turn on the light turn off the same tank"},{"transcript":"banana turn on the lights and turn off the same"},{"transcript":"banana turn on the light turn off the same thank you"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [08/May/2023 01:10:27] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683483205.0012374:: Calling Google API... 
+
+INFO:root:1683483205.329193:: speechrecognition.py:  received API response 
+
+INFO:root:1683483206.0314345:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn on the light turn off the fan tank you","confidence":0.93370128},{"transcript":"banana turn on the light turn off the fan pink you"},{"transcript":"banana turn on the light turn off the fan"},{"transcript":"banana turn on the light turn off the fan."}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [08/May/2023 01:13:26] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683483224.6367693:: Calling Google API... 
+
+INFO:root:1683483224.9694712:: speechrecognition.py:  received API response 
+
+INFO:root:1683483225.5706475:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn on the light turn off the light thank you","confidence":0.987629}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [08/May/2023 01:13:45] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683483582.3899462:: Calling Google API... 
+
+INFO:root:1683483582.7450142:: speechrecognition.py:  received API response 
+
+INFO:root:1683483584.0993109:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn on the light turn off the fish tank you","confidence":0.92485374},{"transcript":"banana turn on the light turn off the tank you"},{"transcript":"banana turn on the light turn off the fish tank U"},{"transcript":"banana turn on the light turn off the Frank and Q"},{"transcript":"banana turn on the lights turn off the fish tank you"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.10 - - [08/May/2023 01:19:44] "GET /get HTTP/1.1" 200 -
+INFO:root:1683484230.4222841:: Calling Google API... 
+
+INFO:root:1683484230.8725588:: speechrecognition.py:  received API response 
+
+INFO:root:1683484231.732621:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana","confidence":0.98762906}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.4 - - [08/May/2023 01:30:31] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683484251.413468:: Calling Google API... 
+
+INFO:root:1683484251.7038646:: speechrecognition.py:  received API response 
+
+INFO:root:1683484252.0984843:: speechrecognition.py: {"result":[]}
+ 
+
+INFO:werkzeug:192.168.2.4 - - [08/May/2023 01:30:52] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:root:1683484280.1733663:: Calling Google API... 
+
+INFO:root:1683484280.3912148:: speechrecognition.py:  received API response 
+
+INFO:root:1683484280.469085:: speechrecognition.py: {"result":[]}
+ 
+
+INFO:werkzeug:192.168.2.4 - - [08/May/2023 01:31:20] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:root:1683484304.7088017:: Calling Google API... 
+
+INFO:root:1683484305.0274787:: speechrecognition.py:  received API response 
+
+INFO:root:1683484306.5702026:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"hello the command coffee","confidence":0.94269669},{"transcript":"hello the command Cafe"},{"transcript":"hello become and coffee"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.4 - - [08/May/2023 01:31:46] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683555640.3963675:: speechrecognition class instantiated 
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.2.10:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:1683555640.8070357:: speechrecognition class instantiated 
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 621-765-780
+INFO:root:1683576501.1574984:: speechrecognition class instantiated 
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.2.10:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:1683576501.5404346:: speechrecognition class instantiated 
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 621-765-780
+INFO:root:1683576512.8295348:: Calling Google API... 
+
+INFO:root:1683576513.0426672:: speechrecognition.py:  received API response 
+
+INFO:root:1683576515.087138:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana 202 not to like you","confidence":0.5874548},{"transcript":"banana 202 not like you"},{"transcript":"banana turn on turn off the lights and give"},{"transcript":"banana turn on the light turn off the lights and give"},{"transcript":"banana turn on turn on turn off the lights and give"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [09/May/2023 03:08:35] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683576784.3526516:: Calling Google API... 
+
+INFO:root:1683576784.6458197:: speechrecognition.py:  received API response 
+
+INFO:root:1683576785.704959:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn on the light turn off the light thank you","confidence":0.70453662},{"transcript":"banana turn on the light Cinepolis thank you"},{"transcript":"banana Bonanza not Cinepolis thank you"},{"transcript":"banana Sinatra Sinatra"},{"transcript":"banana turn on the light turn off the light"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [09/May/2023 03:13:05] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683577423.4660122:: Calling Google API... 
+
+INFO:root:1683577423.796403:: speechrecognition.py:  received API response 
+
+INFO:root:1683577425.2647285:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn on the light turn off the fish tank you","confidence":0.92485392},{"transcript":"banana turn on the light turn off the tank you"},{"transcript":"banana turn on the light turn off the fish tank U"},{"transcript":"banana turn on the light turn off the Frank and Q"},{"transcript":"banana turn on the lights turn off the fish tank you"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.10 - - [09/May/2023 03:23:45] "GET /get HTTP/1.1" 200 -
+INFO:werkzeug:192.168.2.10 - - [09/May/2023 03:23:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:1683597170.2183826:: speechrecognition class instantiated 
+
+INFO:root:1683597231.8074374:: speechrecognition class instantiated 
+
+INFO:root:1683599950.1512444:: speechrecognition class instantiated 
+
+INFO:root:1683613366.4036572:: speechrecognition class instantiated 
+
+INFO:root:1683613438.3713915:: speechrecognition class instantiated 
+
+INFO:root:1683613509.925913:: speechrecognition class instantiated 
+
+INFO:root:1683613549.4072978:: speechrecognition class instantiated 
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.2.10:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:1683613549.8196125:: speechrecognition class instantiated 
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 621-765-780
+INFO:root:1683614149.1023424:: Calling Google API... 
+
+INFO:root:1683614149.3229623:: speechrecognition.py:  received API response 
+
+INFO:root:1683614149.7193165:: speechrecognition.py: {"result":[]}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [09/May/2023 13:35:49] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:root:1683614251.5683591:: Calling Google API... 
+
+INFO:root:1683614251.7905288:: speechrecognition.py:  received API response 
+
+INFO:root:1683614251.935222:: speechrecognition.py: {"result":[]}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [09/May/2023 13:37:31] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:root:1683614296.3947134:: Calling Google API... 
+
+INFO:root:1683614296.5775468:: speechrecognition.py:  received API response 
+
+INFO:root:1683614296.644093:: speechrecognition.py: {"result":[]}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [09/May/2023 13:38:16] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.2.10 - - [09/May/2023 13:39:42] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683614968.697888:: Calling Google API... 
+
+INFO:root:1683614968.9032013:: speechrecognition.py:  received API response 
+
+INFO:root:1683614969.069657:: speechrecognition.py: {"result":[]}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [09/May/2023 13:49:29] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:root:1683615037.8865762:: Calling Google API... 
+
+INFO:root:1683615038.0658786:: speechrecognition.py:  received API response 
+
+INFO:root:1683615038.1855953:: speechrecognition.py: {"result":[]}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [09/May/2023 13:50:38] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:root:1683615066.7034423:: Calling Google API... 
+
+INFO:root:1683615066.9110632:: speechrecognition.py:  received API response 
+
+INFO:root:1683615067.0066454:: speechrecognition.py: {"result":[]}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [09/May/2023 13:51:07] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:root:1683615089.0485168:: Calling Google API... 
+
+INFO:root:1683615089.2417605:: speechrecognition.py:  received API response 
+
+INFO:root:1683615089.3595989:: speechrecognition.py: {"result":[]}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [09/May/2023 13:51:29] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:root:1683615147.9700947:: Calling Google API... 
+
+INFO:root:1683615148.1866875:: speechrecognition.py:  received API response 
+
+INFO:root:1683615148.2876198:: speechrecognition.py: {"result":[]}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [09/May/2023 13:52:28] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.2.10 - - [09/May/2023 13:53:01] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683615197.2107837:: speechrecognition class instantiated 
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.2.10:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:1683615197.6419458:: speechrecognition class instantiated 
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 621-765-780
+INFO:root:1683615206.5635474:: Calling Google API... 
+
+INFO:root:1683615206.7095413:: speechrecognition.py:  received API response 
+
+INFO:root:1683615206.7937262:: speechrecognition.py: {"result":[]}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [09/May/2023 13:53:26] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Lenovo\\Desktop\\HCMUT222\\myproject\\SmartHomeAIOT\\VoiceRecognition\\speech2text.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:1683615215.5917315:: speechrecognition class instantiated 
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 621-765-780
+INFO:root:1683615220.0332737:: Calling Google API... 
+
+INFO:root:1683615220.2254815:: speechrecognition.py:  received API response 
+
+INFO:root:1683615220.2976024:: speechrecognition.py: {"result":[]}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [09/May/2023 13:53:40] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:root:1683615235.0696268:: Calling Google API... 
+
+INFO:root:1683615235.3271399:: speechrecognition.py:  received API response 
+
+INFO:root:1683615236.6313682:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn on the light turn off the fish tank you","confidence":0.92485374},{"transcript":"banana turn on the light turn off the tank you"},{"transcript":"banana turn on the light turn off the fish tank U"},{"transcript":"banana turn on the light turn off the Frank and Q"},{"transcript":"banana turn on the lights turn off the fish tank you"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.10 - - [09/May/2023 13:53:56] "GET /get HTTP/1.1" 200 -
+INFO:werkzeug:192.168.2.10 - - [09/May/2023 13:53:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:1683615265.3696558:: Calling Google API... 
+
+INFO:root:1683615265.64906:: speechrecognition.py:  received API response 
+
+INFO:root:1683615266.7192574:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn on the light turn off the fish tank you","confidence":0.92485374},{"transcript":"banana turn on the light turn off the tank you"},{"transcript":"banana turn on the light turn off the fish tank U"},{"transcript":"banana turn on the light turn off the Frank and Q"},{"transcript":"banana turn on the lights turn off the fish tank you"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.10 - - [09/May/2023 13:54:26] "GET /get HTTP/1.1" 200 -
+INFO:werkzeug:192.168.2.10 - - [09/May/2023 13:55:05] "POST /upload HTTP/1.1" 200 -
+INFO:werkzeug:192.168.2.10 - - [09/May/2023 13:55:35] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683615412.0842574:: Calling Google API... 
+
+INFO:root:1683615412.6078367:: speechrecognition.py:  received API response 
+
+INFO:root:1683615412.6818922:: speechrecognition.py: {"result":[]}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [09/May/2023 13:56:52] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:root:1683615421.739585:: Calling Google API... 
+
+INFO:root:1683615421.9391427:: speechrecognition.py:  received API response 
+
+INFO:root:1683615422.0648696:: speechrecognition.py: {"result":[]}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [09/May/2023 13:57:02] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:root:1683615515.108917:: Calling Google API... 
+
+INFO:root:1683615515.3866143:: speechrecognition.py:  received API response 
+
+INFO:root:1683615515.8930855:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn on the light turn off the light thank you","confidence":0.95655614},{"transcript":"banana turn on the light turn off the lights thank you"},{"transcript":"banana turn on the light Turn Off the Light Tangled"},{"transcript":"banana turn on the light turn off the light 10K"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [09/May/2023 13:58:35] "POST /upload HTTP/1.1" 200 -

@@ -7,8 +7,9 @@ import {
   SafeAreaView,
 } from "react-native";
 import React from "react";
-
 import ToggleButton from "../ToggleButton/ToggleButton";
+
+const SERVER_IP = "http://192.168.2.10";
 
 const lightIcon = require("../../assets/icons/roomDevice/focusedLight.png");
 
@@ -18,8 +19,6 @@ const Light = ({ route }) => {
     <View style={styles.container}>
       <ScrollView
         style={{
-          borderWidth: 5,
-          borderColor: "blue",
           width: "100%",
           height: "100%",
         }}
@@ -35,7 +34,7 @@ const Light = ({ route }) => {
 };
 
 const handdleTurnOnLight = () => {
-  fetch("http://192.168.2.10:3000/light_on", {
+  fetch(`${SERVER_IP}:3000/light_on`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -48,7 +47,7 @@ const handdleTurnOnLight = () => {
 };
 
 const handdleTurnOffLight = () => {
-  fetch("http://192.168.2.10:3000/light_off", {
+  fetch(`${SERVER_IP}:3000/light_off`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -69,11 +68,13 @@ const LightTag = ({ element, light }) => {
       <View style={styles.namecontain}>
         <Text style={styles.lightname}>Light {element + 1}</Text>
       </View>
-      <ToggleButton
-        trueState={handdleTurnOnLight}
-        falseState={handdleTurnOffLight}
-        initialValue={light}
-      />
+      <View style={styles.toggle}>
+        <ToggleButton
+          trueState={handdleTurnOnLight}
+          falseState={handdleTurnOffLight}
+          initialValue={light}
+        />
+      </View>
     </View>
   );
 };
@@ -81,13 +82,11 @@ const LightTag = ({ element, light }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    borderWidth: 10,
     width: "100%",
   },
   tagcontainer: {
     width: "100%",
     flex: 1,
-    borderWidth: 2,
     height: "100%",
   },
   lighttag: {
@@ -99,7 +98,19 @@ const styles = StyleSheet.create({
     marginRight: "5%",
     alignItems: "center",
 
+    backgroundColor: "#FFFFFF",
+    borderColor: "#FFFFFF",
     borderWidth: 1,
+    borderRadius: 10,
+
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 4,
+    elevation: 5,
   },
   icon: {
     height: "40%",
@@ -110,13 +121,17 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   namecontain: {
-    width: "60%",
+    width: "50%",
     paddingLeft: 5,
-    borderWidth: 1,
   },
   lightname: {
     fontSize: 20,
     fontWeight: "bold",
+  },
+  toggle: {
+    position: "absolute",
+    right: 5,
+    padding: 5,
   },
 });
 

@@ -28,6 +28,7 @@ const ControlScreen = () => {
             time={item.time}
             frequent={item.frequent}
             deviceNumber={item.deviceNumber}
+            state={item.state}
           />
         ))}
       </SafeAreaView>
