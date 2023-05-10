@@ -8,11 +8,9 @@ import glob
 from PIL import Image
 import numpy as np
 from flask import Flask, request, make_response
-import jsonpickle
 import cv2
 from flask_cors import CORS
 import torch.nn.functional as F
-from model.sfnet import sfnet20
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 print(device)

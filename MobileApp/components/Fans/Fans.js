@@ -114,6 +114,7 @@ const Fans = ({ initialValue }) => {
       }
     }
   }, [state])
+  
 
   const handleButtonPress = (mode) => {
     if (state === mode) {

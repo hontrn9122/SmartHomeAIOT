@@ -43,7 +43,7 @@ const FaceRegisterScreen = ({ navigation }) => {
             // Prompt the user before leaving the screen
             setPreventChange(true);
           }),
-        [navigation, ready]
+        [navigation, ready, picCount]
       );
 
     useEffect(() => {
@@ -51,7 +51,7 @@ const FaceRegisterScreen = ({ navigation }) => {
         if (picCount === 0) {
             setVisible(true)
         }
-    }, [navigation, ready, picCount]);
+    }, [picCount]);
 
 
     /////////////////// Helper Function ////////////////////
@@ -162,8 +162,8 @@ const FaceRegisterScreen = ({ navigation }) => {
             .then(data => {
                 if (data === "Successful") {
                     setPicCount(prevPicCount => prevPicCount - 1)
-                    setIsTakingPhoto(false)
                 }
+                setIsTakingPhoto(false)
             })
             .catch(error => {
                 console.log('Upload failed', error);
