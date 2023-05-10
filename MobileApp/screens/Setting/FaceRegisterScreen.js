@@ -51,7 +51,7 @@ const FaceRegisterScreen = ({ navigation }) => {
         if (picCount === 0) {
             setVisible(true)
         }
-    }, [picCount]);
+    }, [navigation, ready, picCount]);
 
 
     /////////////////// Helper Function ////////////////////
