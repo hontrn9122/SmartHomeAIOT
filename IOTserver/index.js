@@ -102,6 +102,35 @@ async function get_heat_data(res) {
   }
 }
 
+async function get_heat_current(res) {
+  // Import the node-fetch module
+  const fetch = (await import("node-fetch")).default;
+
+  // Construct the URL for the feed
+  const url = `https://io.adafruit.com/api/v2/${username}/feeds/heat/data?limit=1`;
+
+  // Set the request headers
+  const headers = {
+    "X-AIO-Key": key,
+  };
+
+  try {
+    // Send the GET request
+    const response = await fetch(url, { headers });
+
+    // Check if the request was successful
+    if (response.ok) {
+      // Parse the JSON response
+      const data = await response.json();
+      res.json(data);
+    } else {
+      res.status(500).send(`An error occurred: ${response.statusText}`);
+    }
+  } catch (err) {
+    res.status(500).send(`An error occurred: ${err.message}`);
+  }
+}
+
 async function get_light_data(res) {
   // Import the node-fetch module
   const fetch = (await import("node-fetch")).default;
@@ -148,6 +177,10 @@ app.post("/fan_control", (req, res) => {
 // ----------------------------------- Heat and Light sensor
 app.get("/get_heat_data", (req, res) => {
   get_heat_data(res);
+});
+
+app.get("/get_heat_current", (req, res) => {
+  get_heat_current(res);
 });
 
 app.get("/get_light_data", (req, res) => {

@@ -9,7 +9,7 @@ import {
 import React from "react";
 import ToggleButton from "../ToggleButton/ToggleButton";
 
-const SERVER_IP = "http://192.168.2.10";
+import IOTservice from "../../constants/iot.service";
 
 const lightIcon = require("../../assets/icons/roomDevice/focusedLight.png");
 
@@ -34,29 +34,11 @@ const Light = ({ route }) => {
 };
 
 const handdleTurnOnLight = () => {
-  fetch(`${SERVER_IP}:3000/light_on`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({}),
-  })
-    .then((response) => response.text())
-    .then((text) => console.log(text))
-    .catch((error) => console.error("Error:", error));
+  IOTservice.light_on();
 };
 
 const handdleTurnOffLight = () => {
-  fetch(`${SERVER_IP}:3000/light_off`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({}),
-  })
-    .then((response) => response.text())
-    .then((text) => console.log(text))
-    .catch((error) => console.error("Error:", error));
+  IOTservice.light_off();
 };
 
 const LightTag = ({ element, light }) => {

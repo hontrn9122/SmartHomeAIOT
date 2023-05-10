@@ -12,51 +12,10 @@ import {
 import React, { useState, useEffect } from "react";
 import Button from "../../components/Button/Button";
 
-const SERVER_IP = "http://192.168.2.10";
-
-const getDataNear = async () => {
-  try {
-    // Send the GET request to the /get_heat_data endpoint
-    const response = await fetch(`${SERVER_IP}:3000/get_heat_data`);
-
-    // Check if the request was successful
-    if (response.ok) {
-      // Parse the JSON response
-      const data = await response.json();
-
-      // Handle the data here
-      // console.log(data);
-      return data;
-    } else {
-      console.error(`An error occurred: ${response.statusText}`);
-    }
-  } catch (err) {
-    console.error(`An error occurred: ${err.message}`);
-  }
-};
-
-const getLightData = async () => {
-  try {
-    // Send the GET request to the /get_light_data endpoint
-    const response = await fetch(`${SERVER_IP}:3000/get_light_data`);
-
-    // Check if the request was successful
-    if (response.ok) {
-      // Parse the JSON response
-      const data = await response.json();
-
-      // Handle the data here
-      // console.log("test light data", data);
-      return data;
-    } else {
-      console.error(`An error occurred: ${response.statusText}`);
-    }
-  } catch (err) {
-    console.error(`An error occurred: ${err.message}`);
-  }
-};
+import IOTservice from "../../constants/iot.service";
 
 const StaticsScreen = () => {
+  const [currentHeat, setCurrentHeat] = useState(0);
   const [dataValue, setDataValue] = useState([0, 0, 0, 0, 0, 0]);
   const [heatLabels, setHeatLabels] = useState([0, 0, 0, 0, 0, 0]);
   const [lightValue, setLightValue] = useState(0);
@@ -76,16 +35,17 @@ const StaticsScreen = () => {
     "December",
   ];
   useEffect(() => {
-    getDataNear().then((heatData) => {
+    IOTservice.get_heat_data().then((heatData) => {
+      // console.log("seeing: ", heatData);
       // Extract the data values from the array
       const dataValue = heatData.map((item) => parseFloat(item.value));
       // Extract the labels from the array
       const heatLabels = heatData.map((item) => {
         testing = new Date(item.created_at);
-        // hour = testing.getHours(); ${hour}:
+        hour = testing.getHours();
         minute = testing.getMinutes();
-        second = testing.getSeconds();
-        return (res = `${minute}:${second}`);
+        // second = testing.getSeconds(); ${second}
+        return (res = `${hour}:${minute}`);
       });
 
       setDataValue(dataValue.reverse());
@@ -97,7 +57,12 @@ const StaticsScreen = () => {
       // console.log("test, ", testing);
     });
 
-    getLightData().then((lightData) => {
+    IOTservice.get_current_heat().then((currentHeat) => {
+      setCurrentHeat(currentHeat);
+      // console.log(" current", currentHeat);
+    });
+
+    IOTservice.get_light_data().then((lightData) => {
       const lightValue = lightData[0].value;
       setLightValue(lightValue);
       // console.log("light: ", lightValue);
@@ -152,7 +117,7 @@ const StaticsScreen = () => {
         </View>
         <View style={styles.boxcontent}>
           <Text style={{ fontSize: 40, color: "#FF9900" }}>
-            {dataValue.slice(-1)}°C
+            {currentHeat[0].value}°C
           </Text>
           <Text style={{ fontSize: 40, color: "#307AFF" }}>{lightValue}lm</Text>
         </View>
