@@ -6,8 +6,34 @@ import { Audio } from "expo-av";
 // import * as Speech from "expo-speech";
 
 import { Button } from "../../components";
+import IOTservice from "../../constants/iot.service";
 
 const SERVER_IP = "http://192.168.2.10";
+
+const implementCommand = (command) => {
+  console.log("let go");
+  for (cmd in command) {
+    console.log("command: ---> ", command[cmd]);
+    if (command[cmd] == "turn on the light") {
+      console.log("light on");
+      setTimeout(() => {
+        IOTservice.light_on();
+      }, 2000);
+    } else if (command[cmd] == "turn off the light") {
+      setTimeout(() => {
+        IOTservice.light_off();
+      }, 2000);
+    } else if (command[cmd] == "turn on the fan") {
+      setTimeout(() => {
+        IOTservice.control_fan(50);
+      }, 2000);
+    } else if (command[cmd] == "turn off the fan") {
+      setTimeout(() => {
+        IOTservice.control_fan(0);
+      }, 2000);
+    }
+  }
+};
 
 const SettingScreen = () => {
   const navigation = useNavigation();
@@ -82,7 +108,7 @@ const SettingScreen = () => {
       });
 
       console.log("Uploading...");
-      playRecording(uri);
+      // playRecording(uri);
 
       const response = await fetch(`${SERVER_IP}:5000/upload`, {
         method: "POST",
@@ -97,6 +123,7 @@ const SettingScreen = () => {
       // Store the command
       setCommand(responseText);
       console.log("testing: ", responseText);
+      implementCommand(responseText);
 
       // Handle server response
     } catch (err) {
