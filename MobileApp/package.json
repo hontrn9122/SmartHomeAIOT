@@ -44,7 +44,6 @@
     "react-native-tab-view": "^3.5.1",
     "react-native-vector-icons": "^9.2.0",
     "react-native-viewpager": "^0.2.13",
-    "react-native-virtualized-view": "^1.0.0",
     "rn-circular-slider": "^1.1.0"
   },
   "devDependencies": {

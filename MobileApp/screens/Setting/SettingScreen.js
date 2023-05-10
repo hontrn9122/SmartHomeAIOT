@@ -136,7 +136,7 @@ const SettingScreen = () => {
   };
 
   const onFaceRegistrationPressed = () => {
-    navigation.navigate("FaceRegisterScreen")
+    navigation.navigate("FaceRegisterScreen");
   };
 
   return (
