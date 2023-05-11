@@ -60,12 +60,7 @@ const MainContainer = ({ setLogIn }) => {
         name="Statics"
         component={StaticsScreen}
         options={{
-          headerTitle: () => (
-            <ControlHeader
-              title="Statistics"
-              subtitle="                                                                         "
-            />
-          ),
+          headerTitle: () => <ControlHeader title="Statistics" subtitle="" />,
           headerStyle: {
             height: 150,
             backgroundColor: "#2A2A37",
@@ -89,12 +84,7 @@ const MainContainer = ({ setLogIn }) => {
         name="Control"
         component={ControlScreen}
         options={{
-          headerTitle: () => (
-            <ControlHeader
-              title="Control"
-              subtitle="                                                                         "
-            />
-          ),
+          headerTitle: () => <ControlHeader title="Control" subtitle="" />,
           headerStyle: {
             height: 150,
             backgroundColor: "#2A2A37",
@@ -119,6 +109,16 @@ const MainContainer = ({ setLogIn }) => {
         component={SettingScreen}
         initialParams={{ setLogIn: setLogIn }}
         options={{
+          headerTitle: () => (
+            <ControlHeader
+              title="Setting"
+              subtitle="You can control AI model here"
+            />
+          ),
+          headerStyle: {
+            height: 150,
+            backgroundColor: "#2A2A37",
+          },
           tabBarLabel: "Setting",
           tabBarLabelStyle: { fontWeight: "bold", fontSize: 12 },
           tabBarIcon: ({ focused }) => (

@@ -5,7 +5,7 @@ export const routineData = [
     time: "7:00am",
     frequent: "Every Day",
     deviceNumber: 1,
-    device: [["light", true]],
+    device: [["light", "1"]],
     state: true,
   },
   {
@@ -14,7 +14,7 @@ export const routineData = [
     time: "9:00am",
     frequent: "Every Day",
     deviceNumber: 1,
-    device: [["light", false]],
+    device: [["light", "0"]],
     state: true,
   },
   {
@@ -23,7 +23,7 @@ export const routineData = [
     time: "10:00pm",
     frequent: "Every Saturday",
     deviceNumber: 1,
-    device: [["fan", true]],
+    device: [["fan", "50"]],
     state: false,
   },
   {
@@ -32,7 +32,7 @@ export const routineData = [
     time: "11:00pm",
     frequent: "Every Day",
     deviceNumber: 3,
-    device: [["fan", false]],
+    device: [["fan", "0"]],
     state: false,
   },
   {
@@ -41,7 +41,7 @@ export const routineData = [
     time: "3:00am",
     frequent: "Every Friday",
     deviceNumber: 3,
-    device: [["door", true]],
+    device: [["door", "1"]],
     state: false,
   },
   {
@@ -50,7 +50,7 @@ export const routineData = [
     time: "7:30am",
     frequent: "Every Sunday",
     deviceNumber: 3,
-    device: [["door", false]],
+    device: [["door", "0"]],
     state: false,
   },
   {

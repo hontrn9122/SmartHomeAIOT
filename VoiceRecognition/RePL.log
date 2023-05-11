@@ -599,3 +599,355 @@ INFO:root:1683615515.8930855:: speechrecognition.py: {"result":[]}
  
 
 INFO:werkzeug:192.168.2.11 - - [09/May/2023 13:58:35] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683659817.0426054:: speechrecognition class instantiated 
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.2.10:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:1683659817.4686038:: speechrecognition class instantiated 
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 621-765-780
+INFO:root:1683661157.1540067:: Calling Google API... 
+
+INFO:root:1683661157.4602604:: speechrecognition.py:  received API response 
+
+INFO:root:1683661157.968315:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn on the light thank you","confidence":0.987629}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 02:39:17] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683661189.7284837:: Calling Google API... 
+
+INFO:root:1683661189.8992982:: speechrecognition.py:  received API response 
+
+INFO:root:1683661190.396268:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn on the light thank you","confidence":0.93641478},{"transcript":"banana turn on the lights thank you"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 02:39:50] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683661236.1298547:: Calling Google API... 
+
+INFO:root:1683661236.308339:: speechrecognition.py:  received API response 
+
+INFO:root:1683661236.8374598:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn off the light","confidence":0.98762906},{"transcript":"banana turn off the light."}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 02:40:36] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683661283.4258842:: Calling Google API... 
+
+INFO:root:1683661283.5910068:: speechrecognition.py:  received API response 
+
+INFO:root:1683661284.1418445:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn on the light thank you","confidence":0.82878774},{"transcript":"bananas turn on the light thank you"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 02:41:24] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683661330.4332354:: Calling Google API... 
+
+INFO:root:1683661330.6312494:: speechrecognition.py:  received API response 
+
+INFO:root:1683661331.5467598:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn off the light thank you","confidence":0.81806749},{"transcript":"bananas turn off the light thank you"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 02:42:11] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683661370.1886:: Calling Google API... 
+
+INFO:root:1683661370.3606284:: speechrecognition.py:  received API response 
+
+INFO:root:1683661370.8624969:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"sunana turn on the light thank you","confidence":0.58997625},{"transcript":"so Nana turn on the light thank you"},{"transcript":"sanana turn on the light thank you"},{"transcript":"sonana turn on the light thank you"},{"transcript":"Solana turn on the light thank you"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 02:42:50] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683661383.5610487:: Calling Google API... 
+
+INFO:root:1683661383.7354186:: speechrecognition.py:  received API response 
+
+INFO:root:1683661384.3838677:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn on the light thank you","confidence":0.987629}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 02:43:04] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683661421.0182126:: Calling Google API... 
+
+INFO:root:1683661421.2037911:: speechrecognition.py:  received API response 
+
+INFO:root:1683661421.8352752:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn on the light thank you","confidence":0.987629}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 02:43:41] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683661472.3304174:: Calling Google API... 
+
+INFO:root:1683661472.565931:: speechrecognition.py:  received API response 
+
+INFO:root:1683661473.1139235:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn off the light thank you","confidence":0.81718105},{"transcript":"banana turn off the lights thank you"},{"transcript":"banana turn up the light thank you"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 02:44:33] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683661507.1281917:: Calling Google API... 
+
+INFO:root:1683661507.36244:: speechrecognition.py:  received API response 
+
+INFO:root:1683661508.0961235:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn on the light thank you","confidence":0.987629}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 02:45:08] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683661547.6619148:: Calling Google API... 
+
+INFO:root:1683661547.8741772:: speechrecognition.py:  received API response 
+
+INFO:root:1683661548.34196:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn on the light thank you","confidence":0.90770835},{"transcript":"when Anna turn on the light thank you"},{"transcript":"manannah turn on the light thank you"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 02:45:48] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683661673.7201107:: Calling Google API... 
+
+INFO:root:1683661673.9769611:: speechrecognition.py:  received API response 
+
+INFO:root:1683661674.6635478:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn on the light thank you","confidence":0.987629}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 02:47:54] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683661851.052264:: Calling Google API... 
+
+INFO:root:1683661851.329466:: speechrecognition.py:  received API response 
+
+INFO:root:1683661851.9490223:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn on the light turn off the light thank you","confidence":0.987629}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 02:50:51] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683661882.323436:: Calling Google API... 
+
+INFO:root:1683661882.5958233:: speechrecognition.py:  received API response 
+
+INFO:root:1683661883.164939:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn on the light","confidence":0.95980501},{"transcript":"banana turn on the lights"},{"transcript":"banana turn on the light thank you"},{"transcript":"banana turn on the light."},{"transcript":"banana turn on the lights."}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 02:51:23] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683661890.6330733:: Calling Google API... 
+
+INFO:root:1683661890.8591008:: speechrecognition.py:  received API response 
+
+INFO:root:1683661891.4218564:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn on the light thank you","confidence":0.9481656},{"transcript":"banana turn on the lights thank you"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 02:51:31] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683661911.8861477:: Calling Google API... 
+
+INFO:root:1683661912.1105611:: speechrecognition.py:  received API response 
+
+INFO:root:1683661912.6259584:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn off tonight thank you","confidence":0.80224448},{"transcript":"banana turn off the light thank you"},{"transcript":"bananas turn off tonight thank you"},{"transcript":"bananas turn off the light thank you"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 02:51:52] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683661919.118123:: Calling Google API... 
+
+INFO:root:1683661919.3373318:: speechrecognition.py:  received API response 
+
+INFO:root:1683661919.7053828:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn on the light thank you","confidence":0.987629}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 02:51:59] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683662099.8113415:: Calling Google API... 
+
+INFO:root:1683662100.0473795:: speechrecognition.py:  received API response 
+
+INFO:root:1683662100.6082532:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"turn on the light turn off the light thank you","confidence":0.78355521},{"transcript":"turn on the light turn off the light"},{"transcript":"turn on the light to Natural Light thank you"},{"transcript":"sananda light to Natural Light thank you"},{"transcript":"sonando light to Natural Light thank you"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 02:55:00] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683662106.0499525:: Calling Google API... 
+
+INFO:root:1683662106.2880478:: speechrecognition.py:  received API response 
+
+INFO:root:1683662106.8233705:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn on the light thank you","confidence":0.987629}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 02:55:06] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683662141.1394386:: Calling Google API... 
+
+INFO:root:1683662141.3471634:: speechrecognition.py:  received API response 
+
+INFO:root:1683662142.2660322:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana to not tonight thank you","confidence":0.52681684},{"transcript":"bananas to not tonight thank you"},{"transcript":"Celine Tanaka night thank you"},{"transcript":"Salina to not tonight thank you"},{"transcript":"Savannah to not tonight thank you"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 02:55:42] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683662147.9927058:: Calling Google API... 
+
+INFO:root:1683662148.2158122:: speechrecognition.py:  received API response 
+
+INFO:root:1683662148.8796287:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana Sonata light blinking","confidence":0.6784181},{"transcript":"banana turn off the light blinking"},{"transcript":"banana Sinatra light blinking"},{"transcript":"banana turn off the light"},{"transcript":"bananas turn off the light blinking"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 02:55:48] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683662155.2429037:: Calling Google API... 
+
+INFO:root:1683662155.4484963:: speechrecognition.py:  received API response 
+
+INFO:root:1683662156.0693965:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"bananas turn off the light thank you","confidence":0.73422062},{"transcript":"banana turn off the light thank you"},{"transcript":"bananas turn off the light blinking"},{"transcript":"banana turn off the light blinking"},{"transcript":"so Nana turn off the light thank you"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 02:55:56] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683678800.9509816:: speechrecognition class instantiated 
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.2.10:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:1683678801.3359835:: speechrecognition class instantiated 
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 621-765-780
+INFO:root:1683678917.0656161:: Calling Google API... 
+
+INFO:root:1683678917.3754263:: speechrecognition.py:  received API response 
+
+INFO:root:1683678918.0808148:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn on the light thank you","confidence":0.85462815},{"transcript":"banana turn on the lights thank you"},{"transcript":"banana turn on the light"},{"transcript":"banana turn on the lights"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 07:35:18] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683678928.4032571:: Calling Google API... 
+
+INFO:root:1683678928.7133467:: speechrecognition.py:  received API response 
+
+INFO:root:1683678929.133493:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn off the light thank you","confidence":0.95981163},{"transcript":"banana turn off tonight thank you"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 07:35:29] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683678938.1557558:: Calling Google API... 
+
+INFO:root:1683678938.465247:: speechrecognition.py:  received API response 
+
+INFO:root:1683678939.0470676:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn on the plane thank you","confidence":0.74820513},{"transcript":"banana turn on the plane"},{"transcript":"banana turn on the plane 10-q"},{"transcript":"banana turn on the fan"},{"transcript":"banana turn on the fan thank you"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 07:35:39] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683678948.0035875:: Calling Google API... 
+
+INFO:root:1683678948.3052285:: speechrecognition.py:  received API response 
+
+INFO:root:1683678948.9427304:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn on the fine thank you","confidence":0.7463184},{"transcript":"banana turn on the phone thank you"},{"transcript":"banana turn on the fan thank you"},{"transcript":"banana turn on Define thank you"},{"transcript":"banana turn on do fine thank you"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 07:35:48] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683678956.9530466:: Calling Google API... 
+
+INFO:root:1683678957.2554529:: speechrecognition.py:  received API response 
+
+INFO:root:1683678957.624194:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn on the phone thank you","confidence":0.92367887},{"transcript":"banana turn on the fan thank you"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 07:35:57] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683678978.7878265:: Calling Google API... 
+
+INFO:root:1683678979.0953734:: speechrecognition.py:  received API response 
+
+INFO:root:1683678979.9030936:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn on the fine thank you","confidence":0.95818138},{"transcript":"banana turn on the find 10K"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 07:36:19] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683678988.3043008:: Calling Google API... 
+
+INFO:root:1683678988.6136024:: speechrecognition.py:  received API response 
+
+INFO:root:1683678989.1784837:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn on the phone thank you","confidence":0.94570094},{"transcript":"banana 10 on the phone thank you"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 07:36:29] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683679001.7266412:: Calling Google API... 
+
+INFO:root:1683679002.028285:: speechrecognition.py:  received API response 
+
+INFO:root:1683679002.5297143:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn on the fan","confidence":0.96091938},{"transcript":"banana turn on the plane"},{"transcript":"banana turn on the fame"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 07:36:42] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683679011.8226118:: Calling Google API... 
+
+INFO:root:1683679012.079052:: speechrecognition.py:  received API response 
+
+INFO:root:1683679012.2258341:: speechrecognition.py: {"result":[]}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 07:36:52] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+INFO:root:1683679026.6102653:: Calling Google API... 
+
+INFO:root:1683679026.9249587:: speechrecognition.py:  received API response 
+
+INFO:root:1683679027.313192:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn on the fan thank you","confidence":0.93162763},{"transcript":"banana turn on the phone thank you"},{"transcript":"banana turn on the fan 10-q"},{"transcript":"banana turn on the fan 10 Q"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 07:37:07] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683679035.7480347:: Calling Google API... 
+
+INFO:root:1683679036.5310106:: speechrecognition.py:  received API response 
+
+INFO:root:1683679036.8513916:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn off the fan","confidence":0.94331169},{"transcript":"banana to knock the fan"},{"transcript":"banana turn off the fanny"},{"transcript":"banana turn off the fan."}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 07:37:16] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683679041.595299:: Calling Google API... 
+
+INFO:root:1683679041.906514:: speechrecognition.py:  received API response 
+
+INFO:root:1683679042.5330346:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn off the fan","confidence":0.98762906},{"transcript":"banana turn off the fan."}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 07:37:22] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683679050.2017965:: Calling Google API... 
+
+INFO:root:1683679050.514096:: speechrecognition.py:  received API response 
+
+INFO:root:1683679051.139323:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana sonography thank you","confidence":0.87556696},{"transcript":"banana scenography thank you"},{"transcript":"banana sonographer thank you"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 07:37:31] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683679059.7753847:: Calling Google API... 
+
+INFO:root:1683679060.102907:: speechrecognition.py:  received API response 
+
+INFO:root:1683679060.9443598:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn off the fan","confidence":0.65274251},{"transcript":"banana and turn off the fan"},{"transcript":"banana and send off the fan"},{"transcript":"banana turn off the fan 10K"},{"transcript":"bananas turn off the fan"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 07:37:40] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683679067.041996:: Calling Google API... 
+
+INFO:root:1683679067.3519244:: speechrecognition.py:  received API response 
+
+INFO:root:1683679068.3696606:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn off the fan thank you","confidence":0.64024991},{"transcript":"banana turn off the phantom Q"},{"transcript":"bananas turn off the fan thank you"},{"transcript":"bananas turn off the phantom Q"},{"transcript":"banana turn all the fans and Q"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [10/May/2023 07:37:48] "POST /upload HTTP/1.1" 200 -

@@ -15,7 +15,7 @@ import torch.nn.functional as F
 device = "cuda" if torch.cuda.is_available() else "cpu"
 print(device)
 
-mtcnn = MTCNN(thresholds=[0.6, 0.6, 0.7], margin=20, keep_all=False, post_process=False, device=device, image_size=112)
+mtcnn = MTCNN(thresholds=[0.6, 0.6, 0.7], margin=20, keep_all=True, post_process=False, device=device, image_size=112)
 model_path = os.path.join('model', 'model_scripted.pt')
 face_list_path = os.path.join('face_list', 'face_list.pt')
 if not os.path.exists(face_list_path):
@@ -48,10 +48,10 @@ def face_extraction(img_path):
     print(img)
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
-    face_img = mtcnn(img)
+    face_img = mtcnn(img, os.path.join(app.config['UPLOAD_FOLDER'], "mtcnn", 'face.jpg'))
     if face_img is None:
         return None
-    face_img = trans(face_img).unsqueeze(0).to(device)
+    face_img = trans(face_img).to(device)
     print(face_img.shape)
     return face_img
 
@@ -82,6 +82,11 @@ def face_registration():
     face_img = face_extraction(tmp_img_path)
     if face_img is None:
         msg = "Failed"
+        response = make_response(msg, 200)
+        response.headers['Content-Type'] = 'text/plain'
+        return response
+    elif face_img != torch.Size([1, 3, 112, 112]):
+        msg = "Invalid"
         response = make_response(msg, 200)
         response.headers['Content-Type'] = 'text/plain'
         return response
@@ -132,8 +137,10 @@ def face_verify():
         return response
     face_tensor = torch.cat(tuple([face for face in face_list.values()]), dim=0)
     cos_distance = face_embedding.mm(torch.transpose(face_tensor, 0, 1))
+    cos_distance_reduce, _ = torch.max(cos_distance, dim=0)
     print(cos_distance)
-    pred_result = torch.where(cos_distance > 0.2, 1.0, 0.0).squeeze(0)
+    print(cos_distance_reduce)
+    pred_result = torch.where(cos_distance_reduce > 0.2, 1.0, 0.0)
     true_index = torch.nonzero(pred_result, as_tuple=False).cpu().numpy().flatten()
     print(true_index)
     # return 'test'

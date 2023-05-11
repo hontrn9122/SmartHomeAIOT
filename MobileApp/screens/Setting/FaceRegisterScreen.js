@@ -27,6 +27,7 @@ const FaceRegisterScreen = ({ navigation }) => {
     const [name, setName] = useState(null);
     const [ready, setReady] = useState(false);
     const [preventChange, setPreventChange] = useState(false);
+    const [multiFace, setMultiFace] = useState(false)
 
     const cameraRef = useRef(null);
 
@@ -43,7 +44,7 @@ const FaceRegisterScreen = ({ navigation }) => {
             // Prompt the user before leaving the screen
             setPreventChange(true);
           }),
-        [navigation, ready]
+        [navigation, ready, picCount]
       );
 
     useEffect(() => {
@@ -132,7 +133,7 @@ const FaceRegisterScreen = ({ navigation }) => {
     }
 
     const onDetectFace = async (face) => {
-        if (face.faces.length !== 0 && ready === true && isTakingPhoto === false && picCount > 0) {
+        if (face.faces.length === 1 && ready === true && isTakingPhoto === false && picCount > 0) {
             setIsTakingPhoto(true)
             const result = await cameraRef.current.takePictureAsync(base64 = false, quality = 1)
             const crop_img = await manipulateAsync(
@@ -142,6 +143,9 @@ const FaceRegisterScreen = ({ navigation }) => {
             );
             // console.log(crop_img) 
             await handleFileUpload(crop_img.uri)
+        }
+        else if (face.faces.length > 1 && picCount > 0){
+            setMultiFace(true)
         }
     };
 
@@ -160,10 +164,13 @@ const FaceRegisterScreen = ({ navigation }) => {
         })
             .then(response => response.text())
             .then(data => {
+                if (data === "Invalid") {
+                    setMultiFace(true)
+                }
                 if (data === "Successful") {
                     setPicCount(prevPicCount => prevPicCount - 1)
-                    setIsTakingPhoto(false)
                 }
+                setIsTakingPhoto(false)
             })
             .catch(error => {
                 console.log('Upload failed', error);
@@ -257,6 +264,22 @@ const FaceRegisterScreen = ({ navigation }) => {
                     style={{backgroundColor: '#2A2A37'}}
                 >
                     Registration is on progress. Wait until it is finish!
+                </PSnackbar>
+                <PSnackbar
+                    visible={multiFace}
+                    onDismiss={() => {
+                        setMultiFace(false)
+                    }}
+                    action={{
+                        label: 'OK',
+                        onPress: () => {
+                            setMultiFace(false)
+                        },
+                    }}
+                    duration={2000}
+                    style={{backgroundColor: '#2A2A37'}}
+                >
+                    More than one ID is detected! Please make sure there is only one face in the camera.
                 </PSnackbar>
             </View>
         </PProvider>

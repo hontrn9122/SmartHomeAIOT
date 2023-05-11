@@ -35,6 +35,7 @@ const styles = StyleSheet.create({
     color: "#FFFFFF",
   },
   address: {
+    fontSize: 20,
     color: "#FFFFFF",
   },
   avatars: {
