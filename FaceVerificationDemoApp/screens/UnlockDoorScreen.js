@@ -1,4 +1,4 @@
-import { Button, StyleSheet, Text, TouchableOpacity, View, StatusBar, Image } from "react-native";
+import { Button, StyleSheet, Text, View, StatusBar, Image, Alert } from "react-native";
 import React, { useState, useRef, useEffect } from "react";
 import { Camera, CameraType } from 'expo-camera';
 import { manipulateAsync, SaveFormat } from 'expo-image-manipulator';
@@ -23,9 +23,38 @@ const UnlockDoorScreen = ({ navigation }) => {
     const cameraRef = useRef(null);
 
     const [isUnlocked, setIsUnlocked] = useState(false); // change this hook when open door successfully
-    const handleUnlockDoor = () => {
+    const handleUnlockDoor = (value) => {
         // This function is called when ID verified and user pressed unclock button
-        setIsUnlocked(true)
+        // value === true => unlock door else lock door
+        // add the machanism to lock the door 30s after unlock to the server and remove line 82 in this file
+        ////////////////////////// Code to call IOT server ////////////////////////
+
+        ////////////////////////// End code ///////////////////////////////////////
+        
+        // put this if statement in the error handler when receive the result from the IOT server (remember to remove outter if stmt)
+        if (false) {
+            if (value){
+                Alert.alert("Error!", "Failed to unlock the door!", [
+                    { text: "OK" },
+                ]);
+                return;
+            }
+            else {
+                Alert.alert("Error!", "Failed to lock the door!", [
+                    { text: "OK" },
+                ]);
+                return;
+            }
+        }
+        if (value) setCounter(30) // door is unlocked for 30 seconds
+        else if (counter !== 0) {
+            setIsVerified(false)
+            setCounter(60)
+            Alert.alert("Successful!", "The door has been locked!", [
+                { text: "OK" },
+            ]);
+        }
+        setIsUnlocked(value) ///// set door state
     }
 
     useEffect(() => {
@@ -42,7 +71,17 @@ const UnlockDoorScreen = ({ navigation }) => {
     }, [isVerified])
 
     useEffect(() => {
-        if (counter === 0) setVisible(true)
+        ///// faceID expires in 60s
+        if (counter === 0 && !isUnlocked) setVisible(true)
+        ///// lock the door after 30s
+        else if (counter === 0 && isUnlocked) {
+            setIsVerified(false)
+            Alert.alert("Expired!", "The door has been locked!", [
+                { text: "OK" },
+            ]);
+            handleUnlockDoor(false) // remove this line if the IOT server can automatically lock the door after 30s
+            setCounter(60)
+        } 
     }, [counter])
 
     const switchCamera = () => {
@@ -160,19 +199,21 @@ const UnlockDoorScreen = ({ navigation }) => {
                     <Text
                         style={{ width: "100%", textAlign: 'center', fontSize: 12, color: '#8ED581' }}
                     >
-                        'Door open successfully!'
+                        {'Door open successfully! Door will be locked in ' + counter + 's'}
                     </Text> :
                     <Text 
                         style={{ width: "100%", textAlign: 'center', fontSize: 10, color: 'grey' }}
                     >
-                        {"Your ID is timeout in " + counter}
+                        {"Your ID will expire in " + counter + 's'}
                     </Text>}
                 </View>
                 <PTouchableRipple
-                    onPress={handleUnlockDoor}
+                    onPress={() => handleUnlockDoor(!isUnlocked)}
                     style={{ width: '90%', height: "10%", backgroundColor: "white", borderRadius: 10, }}
                 >
-                    <Text style={{ flex: 1, textAlignVertical: 'center', textAlign: 'center', color: "#2A2A37" }}>Unlock the door</Text>
+                    <Text style={{ flex: 1, textAlignVertical: 'center', textAlign: 'center', color: "#2A2A37" }}>
+                        {isUnlocked ? 'Lock the door' : 'Unlock the door'}
+                    </Text>
                 </PTouchableRipple>
             </View>
 
