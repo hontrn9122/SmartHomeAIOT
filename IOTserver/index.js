@@ -73,6 +73,26 @@ function fan_control(req, res) {
   );
 }
 
+function open_door(res) {
+  client.publish(username + "/feeds/door", "1", {}, (err) => {
+    if (err) {
+      res.status(500).send(`Failed to publish state: ${err.message}`);
+    } else {
+      res.send(`Published state 1 to topic "door"`);
+    }
+  });
+}
+
+function close_door(res) {
+  client.publish(username + "/feeds/door", "0", {}, (err) => {
+    if (err) {
+      res.status(500).send(`Failed to publish state: ${err.message}`);
+    } else {
+      res.send(`Published state 0 to topic "door"`);
+    }
+  });
+}
+
 async function get_heat_data(res) {
   // Import the node-fetch module
   const fetch = (await import("node-fetch")).default;
@@ -167,6 +187,15 @@ app.post("/light_on", (req, res) => {
 
 app.post("/light_off", (req, res) => {
   light_off(res);
+});
+
+// ------------------------------------ Door
+app.post("/door_open", (req, res) => {
+  open_door(res);
+});
+
+app.post("/door_close", (req, res) => {
+  close_door(res);
 });
 
 // ----------------------------------- Fan Control
