@@ -102,9 +102,36 @@ const get_light_data = async () => {
   }
 };
 
+const door_open = () => {
+  fetch(`${SERVER_IP}:3000/door_open`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({}),
+  })
+    .then((response) => response.text())
+    .then((text) => console.log(text))
+    .catch((error) => console.error("Error:", error));
+};
+
+const door_close = () => {
+  fetch(`${SERVER_IP}:3000/door_close`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({}),
+  })
+    .then((response) => response.text())
+    .then((text) => console.log(text))
+    .catch((error) => console.error("Error:", error));
+};
 const IOTservice = {
   light_on,
   light_off,
+  door_close,
+  door_open,
   control_fan,
   get_heat_data,
   get_current_heat,

@@ -191,43 +191,43 @@ const UnlockDoorScreen = ({ navigation }) => {
       });
   };
 
-  if (!isVerified) {
-    // if not verified, show camera screen
-    return (
-      <PProvider>
-        <View style={styles.subcontainer}>
-          <PIconButton
-            icon={arrow_back}
-            iconColor={"white"}
-            size={20}
-            onPress={() => navigation.goBack()}
-          />
-          <Text
-            style={{
-              color: "white",
-              fontSize: 14,
-            }}
-          >
-            FaceID Verifying...
-          </Text>
-          <PIconButton
-            icon={camera_switch}
-            iconColor={"white"}
-            size={20}
-            onPress={switchCamera}
-          />
-        </View>
-        <View style={styles.container}>
-          <Camera
-            style={styles.camera}
-            type={camType}
-            onFacesDetected={onDetectFace}
-            ref={cameraRef}
-          ></Camera>
-        </View>
-      </PProvider>
-    );
-  }
+  //   if (!isVerified) {
+  //     // if not verified, show camera screen
+  //     return (
+  //       <PProvider>
+  //         <View style={styles.subcontainer}>
+  //           <PIconButton
+  //             icon={arrow_back}
+  //             iconColor={"white"}
+  //             size={20}
+  //             onPress={() => navigation.goBack()}
+  //           />
+  //           <Text
+  //             style={{
+  //               color: "white",
+  //               fontSize: 14,
+  //             }}
+  //           >
+  //             FaceID Verifying...
+  //           </Text>
+  //           <PIconButton
+  //             icon={camera_switch}
+  //             iconColor={"white"}
+  //             size={20}
+  //             onPress={switchCamera}
+  //           />
+  //         </View>
+  //         <View style={styles.container}>
+  //           <Camera
+  //             style={styles.camera}
+  //             type={camType}
+  //             onFacesDetected={onDetectFace}
+  //             ref={cameraRef}
+  //           ></Camera>
+  //         </View>
+  //       </PProvider>
+  //     );
+  //   }
 
   return (
     <PProvider>

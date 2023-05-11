@@ -64,17 +64,17 @@ const HomeScreen = () => {
         <Image style={styles.plusIcon} source={plusIcon} />
       </TouchableOpacity>
       <Modal style={styles.popup} isVisible={isModalVisible}>
-        <View>
+        <View style={styles.commingsoon}>
           <Text>Add new</Text>
         </View>
-        <View>
+        <View style={styles.commingsoon}>
           <Text>Add new Room</Text>
         </View>
-        <View>
+        <View style={styles.commingsoon}>
           <Text>Add new Device</Text>
         </View>
         <View>
-          <Button onPress={handleModal} title="push" />
+          <Button onPress={handleModal} title="close" />
         </View>
       </Modal>
       <Modal isVisible={isRoomOpen}>
@@ -136,6 +136,11 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     width: "80%",
     height: "35%",
+  },
+  commingsoon: {
+    borderWidth: 1,
+    padding: 10,
+    margin: 5,
   },
 });
 
