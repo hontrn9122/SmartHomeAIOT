@@ -180,6 +180,10 @@ async function get_light_data(res) {
   }
 }
 
+function get_bot_voice(req, res) {
+  res.send(pleaseSayAgain);
+}
+
 // ----------------------------------- Light Toggle
 app.post("/light_on", (req, res) => {
   light_on(res);

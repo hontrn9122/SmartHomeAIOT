@@ -268,6 +268,72 @@ const UnlockDoorScreen = ({ navigation }) => {
         );
     }
 
+  const handleFileUpload = async (uri) => {
+    const formData = new FormData();
+    formData.append("file", {
+      uri: uri,
+      name: "image.jpg",
+      type: "image/jpeg",
+    });
+    await fetch("http://192.168.1.177:6868/faceapi/verify", {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => response.text())
+      .then((data) => {
+        if (data !== "Failed" && data !== "Unknown") {
+          setIsVerified(true);
+          setName(data);
+          // setIsFaceDetected(true)
+        }
+        // setIsFaceDetected(true)
+        setIsTakingPhoto(false);
+      })
+      .catch((error) => {
+        console.log("Upload failed", error);
+        setIsTakingPhoto(false);
+      });
+  };
+
+    if (!isVerified) {
+      // if not verified, show camera screen
+      return (
+        <PProvider>
+          <View style={styles.subcontainer}>
+            <PIconButton
+              icon={arrow_back}
+              iconColor={"white"}
+              size={20}
+              onPress={() => navigation.goBack()}
+            />
+            <Text
+              style={{
+                color: "white",
+                fontSize: 14,
+              }}
+            >
+              FaceID Verifying...
+            </Text>
+            <PIconButton
+              icon={camera_switch}
+              iconColor={"white"}
+              size={20}
+              onPress={switchCamera}
+            />
+          </View>
+          <View style={styles.container}>
+            <Camera
+              style={styles.camera}
+              type={camType}
+              onFacesDetected={onDetectFace}
+              ref={cameraRef}
+            ></Camera>
+          </View>
+        </PProvider>
+      );
+    }
+    
+    
     return (
         <PProvider>
             <View style={styles.subcontainerVerified}>

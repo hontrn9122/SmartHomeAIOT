@@ -8,10 +8,12 @@ import { Audio } from "expo-av";
 import { Button } from "../../components";
 import IOTservice from "../../constants/iot.service";
 
+const pleaseSayAgain = require("../../constants/botvoice.js/pleaseSayAgain.mp4");
+
 const SERVER_IP = "http://192.168.2.10";
 
 const implementCommand = (command) => {
-  console.log("let go");
+  //console.log("let go");
   for (cmd in command) {
     console.log("command: ---> ", command[cmd]);
     if (command[cmd] == "turn on the light") {
@@ -30,6 +32,14 @@ const implementCommand = (command) => {
     } else if (command[cmd] == "turn off the fan") {
       setTimeout(() => {
         IOTservice.control_fan(0);
+      }, 2000);
+    } else if (command[cmd] == "open the door") {
+      setTimeout(() => {
+        IOTservice.door_open();
+      }, 2000);
+    } else if (command[cmd] == "close the door") {
+      setTimeout(() => {
+        IOTservice.door_close();
       }, 2000);
     }
   }
@@ -93,6 +103,19 @@ const SettingScreen = () => {
     }
   };
 
+  // hello = fetch(`${SERVER_IP}:3000/get_bot_voice`, {
+  //   method: "POST",
+  //   headers: {
+  //     "Content-Type": "application/json",
+  //   },
+  //   body: JSON.stringify({}),
+  // });
+  // audio = hello.blob();
+  // audiorui = URL.createObjectURL(audio);
+  // finalaudio = new Audio(audiorui);
+  // console.log("testing voice bot", hello);
+  // playRecording(finalaudio);
+
   const stopRecording = async () => {
     try {
       await recording.stopAndUnloadAsync();
@@ -103,7 +126,7 @@ const SettingScreen = () => {
       const formData = new FormData();
       formData.append("file", {
         uri: uri,
-        name: "hehe.mp4",
+        name: "recording.mp4",
         type: "application/octet-stream",
       });
 
@@ -123,6 +146,10 @@ const SettingScreen = () => {
       // Store the command
       setCommand(responseText);
       console.log("testing: ", responseText);
+      if (responseText == []) {
+        console.log("Please say again");
+        playRecording(pleaseSayAgain);
+      }
       implementCommand(responseText);
 
       // Handle server response
@@ -157,7 +184,11 @@ const SettingScreen = () => {
       />
       <View>
         {command.map((item, element) => {
-          return <Text key={element}>{item}</Text>;
+          return (
+            <Text key={element}>
+              {element + 1}. {item}
+            </Text>
+          );
         })}
       </View>
       <Button

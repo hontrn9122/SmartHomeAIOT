@@ -951,3 +951,94 @@ INFO:root:1683679068.3696606:: speechrecognition.py: {"result":[]}
  
 
 INFO:werkzeug:192.168.2.11 - - [10/May/2023 07:37:48] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683826348.069618:: speechrecognition class instantiated 
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.2.10:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:1683826348.4876192:: speechrecognition class instantiated 
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 621-765-780
+INFO:root:1683826408.259259:: Calling Google API... 
+
+INFO:root:1683826408.5433083:: speechrecognition.py:  received API response 
+
+INFO:root:1683826409.1903477:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana turn on the light turn off the light thank you","confidence":0.92335206},{"transcript":"banana turn on the light turn off the light tank"},{"transcript":"banana turn on the light turn off the light 10K"},{"transcript":"banana turn on the light turn off the light tanks"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [12/May/2023 00:33:29] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683826615.4677846:: Calling Google API... 
+
+INFO:root:1683826615.7954369:: speechrecognition.py:  received API response 
+
+INFO:root:1683826616.247416:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana open the door close the door thank you","confidence":0.96007466},{"transcript":"banana open the door closed the door thank you"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [12/May/2023 00:36:56] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683826655.9088845:: Calling Google API... 
+
+INFO:root:1683826656.1178827:: speechrecognition.py:  received API response 
+
+INFO:root:1683826656.6701114:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana open the door thank you","confidence":0.86196297},{"transcript":"banana open the jar thank you"},{"transcript":"banana opened the door thank you"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [12/May/2023 00:37:36] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683826671.9186642:: Calling Google API... 
+
+INFO:root:1683826672.1196628:: speechrecognition.py:  received API response 
+
+INFO:root:1683826672.643789:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"banana open Digital thank you","confidence":0.98762906}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [12/May/2023 00:37:52] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683826808.1225684:: Calling Google API... 
+
+INFO:root:1683826808.3486218:: speechrecognition.py:  received API response 
+
+INFO:root:1683826808.54869:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"can you say again","confidence":0.97174913},{"transcript":"can you say it again"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [12/May/2023 00:40:08] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683826834.2656412:: Calling Google API... 
+
+INFO:root:1683826834.9824383:: speechrecognition.py:  received API response 
+
+INFO:root:1683826835.2685912:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"please say again","confidence":0.94406557},{"transcript":"please play again"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [12/May/2023 00:40:35] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683826954.214863:: Calling Google API... 
+
+INFO:root:1683826954.4434862:: speechrecognition.py:  received API response 
+
+INFO:root:1683826955.0149136:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"play sound again","confidence":0.6417504},{"transcript":"play Soundgarden"},{"transcript":"FaceTime game"},{"transcript":"play Style game"},{"transcript":"okay sounds good"}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [12/May/2023 00:42:35] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683827088.6556535:: Calling Google API... 
+
+INFO:root:1683827088.8514078:: speechrecognition.py:  received API response 
+
+INFO:root:1683827088.9846914:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"hello","confidence":0.98762906}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [12/May/2023 00:44:48] "POST /upload HTTP/1.1" 200 -
+INFO:root:1683827123.7061064:: Calling Google API... 
+
+INFO:root:1683827123.8842373:: speechrecognition.py:  received API response 
+
+INFO:root:1683827124.0121868:: speechrecognition.py: {"result":[]}
+{"result":[{"alternative":[{"transcript":"hello","confidence":0.98762906}],"final":true}],"result_index":0}
+ 
+
+INFO:werkzeug:192.168.2.11 - - [12/May/2023 00:45:24] "POST /upload HTTP/1.1" 200 -

@@ -1,5 +1,7 @@
 import { View, Text, Dimensions, SafeAreaView, StyleSheet } from "react-native";
 
+import Modal from "react-native-modal";
+
 import {
   LineChart,
   BarChart,
@@ -19,6 +21,10 @@ const StaticsScreen = () => {
   const [dataValue, setDataValue] = useState([0, 0, 0, 0, 0, 0]);
   const [heatLabels, setHeatLabels] = useState([0, 0, 0, 0, 0, 0]);
   const [lightValue, setLightValue] = useState(0);
+  const [isDotVisible, setIsDotVisible] = useState(false);
+  const [dotValue, setDotValue] = useState(0);
+
+  const handleDotPopUp = () => setIsDotVisible(() => !isDotVisible);
 
   const months = [
     "January",
@@ -45,7 +51,7 @@ const StaticsScreen = () => {
         hour = testing.getHours();
         minute = testing.getMinutes();
         // second = testing.getSeconds(); ${second}
-        return (res = `${hour}:${minute}`);
+        return (res = `${hour}h${minute}`);
       });
 
       setDataValue(dataValue.reverse());
@@ -58,7 +64,8 @@ const StaticsScreen = () => {
     });
 
     IOTservice.get_current_heat().then((currentHeat) => {
-      setCurrentHeat(currentHeat);
+      const heatCurrent = currentHeat[0].value;
+      setCurrentHeat(heatCurrent);
       // console.log(" current", currentHeat);
     });
 
@@ -77,6 +84,10 @@ const StaticsScreen = () => {
     <SafeAreaView>
       <View style={styles.chart}>
         <LineChart
+          onDataPointClick={({ value, dataset, getColor }) => {
+            setDotValue(value);
+            handleDotPopUp();
+          }}
           data={{
             labels: heatLabels,
             datasets: [
@@ -117,7 +128,8 @@ const StaticsScreen = () => {
         </View>
         <View style={styles.boxcontent}>
           <Text style={{ fontSize: 40, color: "#FF9900" }}>
-            {currentHeat[0].value}°C
+            {currentHeat}
+            °C
           </Text>
           <Text style={{ fontSize: 40, color: "#307AFF" }}>{lightValue}lm</Text>
         </View>
@@ -125,6 +137,13 @@ const StaticsScreen = () => {
           <Button text="Change" />
         </View>
       </View>
+
+      <Modal isVisible={isDotVisible}>
+        <View style={styles.popup}>
+          <Text style={{ fontSize: 35 }}>it's {dotValue}°C</Text>
+          <Button text="close" onPress={handleDotPopUp} />
+        </View>
+      </Modal>
       <View style={styles.content}></View>
     </SafeAreaView>
   );
@@ -183,6 +202,15 @@ const styles = StyleSheet.create({
     height: "30%",
     justifyContent: "center",
     alignItems: "center",
+  },
+  popup: {
+    borderRadius: 10,
+    alignItems: "center",
+    alignSelf: "center",
+    backgroundColor: "#FFFFFF",
+    borderWidth: 1,
+    height: "15%",
+    width: "50%",
   },
 });
 
